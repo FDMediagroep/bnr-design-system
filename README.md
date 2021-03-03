@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://bnr-design-system.vercel.app" target="_BLANK" rel="noopener noreferrer">
-        <img width="160" src="https://github.com/FDMediagroep/bnr-design-system/raw/master/public/assets/icons/logo.svg?sanitize=true" alt="BNR Design System">
+        <img width="160" src="https://github.com/FDMediagroep/bnr-design-system/raw/main/public/assets/icons/logo.svg?sanitize=true" alt="BNR Design System">
     </a>
 </p>
 
