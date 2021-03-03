@@ -14,8 +14,8 @@
     <span>
         <img src="https://github.com/FDMediagroep/bnr-design-system/actions/workflows/codeql-analysis.yml/badge.svg" alt="Code Quality"/>
     </span>
-    <a href="https://coveralls.io/github/FDMediagroep/bnr-design-system?branch=master" target="_blank" rel="noopener noreferrer">
-        <img src="https://coveralls.io/repos/github/FDMediagroep/bnr-design-system/badge.svg?branch=master" alt="Test coverage"/>
+    <a href="https://coveralls.io/github/FDMediagroep/bnr-design-system?branch=main" target="_blank" rel="noopener noreferrer">
+        <img src="https://coveralls.io/repos/github/FDMediagroep/bnr-design-system/badge.svg?branch=main" alt="Test coverage"/>
     </a>
     <a href="https://npmjs.com/package/@fdmg%2Fbnr-design-system" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/npm/v/@fdmg/bnr-design-system?color=blue" alt="NPM version"/>
