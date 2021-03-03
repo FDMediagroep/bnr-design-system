@@ -75,6 +75,30 @@ module.exports = {
         minimize: true,
     },
     entry: {
+        // Design Tokens
+        '/components/design-tokens/icons': ['./src/design-tokens/icons.ts'],
+        '/components/design-tokens/design-tokens': [
+            './src/design-tokens/design-tokens.ts',
+        ],
+
+        // Controls
+        '/components/button/Button': ['./src/components/button/Button.tsx'],
+        '/components/button/ButtonCta': [
+            './src/components/button/ButtonCta.tsx',
+        ],
+        '/components/button/ButtonFollow': [
+            './src/components/button/ButtonFollow.tsx',
+        ],
+        '/components/button/ButtonGhost': [
+            './src/components/button/ButtonGhost.tsx',
+        ],
+        '/components/input/Checkbox': ['./src/components/input/Checkbox.tsx'],
+        '/components/input/Radio': ['./src/components/input/Radio.tsx'],
+        '/components/input/Select': ['./src/components/input/Select.tsx'],
+        '/components/input/Switch': ['./src/components/input/Switch.tsx'],
+        '/components/input/TextArea': ['./src/components/input/TextArea.tsx'],
+        '/components/input/TextInput': ['./src/components/input/TextInput.tsx'],
+
         // Global
         main: ['./src/main.ts'],
     },

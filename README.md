@@ -106,44 +106,6 @@ WIP
 ### Controls
 
 <details>
-<summary>Breaking Switch</summary>
-
-[Demo](https://bnr-design-system.vercel.app/input/breaking-switch)
-
-Component CSS:
-
-```
-import "@fdmg/bnr-design-system/components/design-tokens/design-tokens.css";
-import "@fdmg/bnr-design-system/components/input/BreakingSwitch.css";
-```
-
-```
-import { BreakingSwitch } from "@fdmg/bnr-design-system/components/input/BreakingSwitch";
-
-interface Props {
-    checked?: boolean;
-}
-
-function Foo(props: Props) {
-    const [checked, setChecked] = useState(props.checked);
-
-    function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-        setChecked(e.currentTarget.checked);
-    }
-
-    return (
-        <BreakingSwitch
-            label="Label of the switch"
-            checked={checked}
-            onChange={handleChange}
-        />
-    );
-}
-```
-
-</details>
-
-<details>
 <summary>Button</summary>
 
 [Demo](https://bnr-design-system.vercel.app/button/default)

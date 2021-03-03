@@ -51,6 +51,7 @@
             height: 32px;
             box-sizing: border-box;
             transition: all 0.15s linear;
+            outline: none;
             color: var(--input-color);
             background-color: var(--input-background);
             border-bottom: 2px solid var(--input-underline);

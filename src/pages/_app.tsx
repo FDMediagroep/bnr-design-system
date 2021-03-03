@@ -173,13 +173,6 @@ function App({ Component, pageProps }) {
                         menuItems: [
                             {
                                 component: (
-                                    <Link href="/input/breaking-switch">
-                                        <a>Breaking Switch</a>
-                                    </Link>
-                                ),
-                            },
-                            {
-                                component: (
                                     <Link href="/button/default">
                                         <a>Button</a>
                                     </Link>

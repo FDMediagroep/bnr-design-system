@@ -6,10 +6,10 @@
     // --logo: url(../img/fd/static/logo.svg);
     --persoonlijk-logo-filter: none;
 
-    --product-background: #{map-deep-get($colors, 'colors', 'neutral', 80)};
+    --product-background: #{map-deep-get($colors, 'colors', 'neutral', 100)};
     --product-background-2: #{map-deep-get($colors, 'colors', 'neutral', 90)};
-    --content-background: #{map-deep-get($colors, 'colors', 'neutral', 90)};
-    --navigation-background: #{map-deep-get($colors, 'colors', 'neutral', 70)};
+    --content-background: #{map-deep-get($colors, 'colors', 'neutral', 100)};
+    --navigation-background: #{map-deep-get($colors, 'colors', 'neutral', 90)};
     --navigation-item: #{map-deep-get($colors, 'colors', 'neutral', 30)};
     --navigation-item-active: #{map-deep-get($colors, 'colors', 'neutral', 60)};
     --opaque-label-background: #{map-deep-get($colors, 'colors', 'primary', 75)};

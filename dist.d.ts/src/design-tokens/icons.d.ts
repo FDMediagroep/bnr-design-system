@@ -14,7 +14,7 @@ export { default as DownloadIcon } from '../../public/assets/icons/download2.svg
 export { default as EnvelopeIcon } from '../../public/assets/icons/envelope.svg';
 export { default as ExpandIcon } from '../../public/assets/icons/expand.svg';
 export { default as FacebookIcon } from '../../public/assets/icons/facebook.svg';
-export { default as FdIcon } from '../../public/assets/icons/logo.svg';
+export { default as BNRIcon } from '../../public/assets/icons/logo.svg';
 export { default as FdmgIcon } from '../../public/assets/icons/logo-fdmg.svg';
 export { default as LinkedInIcon } from '../../public/assets/icons/linkedin.svg';
 export { default as MinimiseIcon } from '../../public/assets/icons/minimise.svg';

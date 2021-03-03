@@ -1,6 +1,5 @@
 export * as DesignTokens from './design-tokens/design-tokens';
 export * from './design-tokens/icons';
-export { BreakingSwitch } from './components/input/BreakingSwitch';
 export { Checkbox } from './components/input/Checkbox';
 export { Radio } from './components/input/Radio';
 export { Select } from './components/input/Select';
