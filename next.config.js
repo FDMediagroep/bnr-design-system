@@ -1,17 +1,17 @@
-const rewriteConfig = require("./rewrites");
+const rewriteConfig = require('./rewrites');
 
 const serverless = {};
 
 if (process.env.SERVERLESS) {
-    console.log("Serverless target");
-    serverless.target = "serverless";
+    console.log('Serverless target');
+    serverless.target = 'serverless';
 }
 
 module.exports = {
     ...serverless,
-    future: { webpack5: true },
+    // future: { webpack5: true },
     images: {
-        domains: ["images.fd.nl", "fd-external-development.imgix.net"],
+        domains: ['images.fd.nl', 'fd-external-development.imgix.net'],
     },
     async rewrites() {
         return [...rewriteConfig];
@@ -20,16 +20,16 @@ module.exports = {
         // Markdown
         config.module.rules.push({
             test: /\.md$/,
-            use: ["raw-loader"],
+            use: ['raw-loader'],
         });
 
         // SVG
         config.module.rules.push({
             test: /\.svg$/,
             use: [
-                "raw-loader",
+                'raw-loader',
                 {
-                    loader: "svgo-loader",
+                    loader: 'svgo-loader',
                     options: {
                         plugins: [
                             // { cleanupAttrs: false },
@@ -65,10 +65,10 @@ module.exports = {
             const entries = await originalEntry();
 
             if (
-                entries["main.js"] &&
-                !entries["main.js"].includes("./client/polyfills.js")
+                entries['main.js'] &&
+                !entries['main.js'].includes('./client/polyfills.js')
             ) {
-                entries["main.js"].unshift("./client/polyfills.js");
+                entries['main.js'].unshift('./client/polyfills.js');
             }
 
             return entries;
@@ -89,14 +89,14 @@ module.exports = {
         /**
          * Generate webpack bundle report.
          */
-        if (process.env.WEBPACK_BUNDLE_ANALYZER == "true") {
-            const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+        if (process.env.WEBPACK_BUNDLE_ANALYZER == 'true') {
+            const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
             config.plugins.push(
                 new BundleAnalyzerPlugin({
-                    analyzerMode: "static",
+                    analyzerMode: 'static',
                     reportFilename: options.isServer
-                        ? "../../analyzer/server.html"
-                        : "../analyzer/client.html",
+                        ? '../../analyzer/server.html'
+                        : '../analyzer/client.html',
                     openAnalyzer: false,
                 })
             );
