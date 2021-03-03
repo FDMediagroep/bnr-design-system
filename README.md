@@ -6,13 +6,13 @@
 
 <p align="center">
     <span>
-        <img src="https://github.com/FDMediagroep/bnr-design-system/workflows/Build/badge.svg" alt="Build"/>
+        <img src="https://github.com/FDMediagroep/bnr-design-system/actions/workflows/build.yml/badge.svg" alt="Build"/>
     </span>
     <span>
-        <img src="https://github.com/FDMediagroep/bnr-design-system/workflows/Publish/badge.svg" alt="Publish"/>
+        <img src="https://github.com/FDMediagroep/bnr-design-system/actions/workflows/publish.yml/badge.svg" alt="Publish"/>
     </span>
     <span>
-        <img src="https://github.com/FDMediagroep/bnr-design-system/workflows/CodeQL/badge.svg" alt="Code Quality"/>
+        <img src="https://github.com/FDMediagroep/bnr-design-system/actions/workflows/codeql-analysis.yml/badge.svg" alt="Code Quality"/>
     </span>
     <a href="https://coveralls.io/github/FDMediagroep/bnr-design-system?branch=master" target="_blank" rel="noopener noreferrer">
         <img src="https://coveralls.io/repos/github/FDMediagroep/bnr-design-system/badge.svg?branch=master" alt="Test coverage"/>
