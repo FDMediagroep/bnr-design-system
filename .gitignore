@@ -107,3 +107,4 @@ dist
 
 analyzer
 js-coverage
+dist.d.ts
