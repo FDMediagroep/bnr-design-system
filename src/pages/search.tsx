@@ -31,10 +31,6 @@ import {
     metaDescription as gridDescription,
 } from './grid';
 import {
-    metaTitle as breakingSwitchTitle,
-    metaDescription as breakingSwitchDescription,
-} from './input/breaking-switch';
-import {
     metaTitle as checkboxTitle,
     metaDescription as checkboxDescription,
 } from './input/checkbox';
@@ -102,10 +98,6 @@ const searchIndex: SearchIndex = {
     '/grid': {
         title: gridTitle,
         description: gridDescription,
-    },
-    '/input/breaking-switch': {
-        title: breakingSwitchTitle,
-        description: breakingSwitchDescription,
     },
     '/input/checkbox': {
         title: checkboxTitle,
