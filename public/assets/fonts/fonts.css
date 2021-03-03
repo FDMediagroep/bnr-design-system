@@ -1,0 +1,21 @@
+@font-face {
+    font-family: GlacialBold;
+    font-weight: bold;
+    font-style: bold;
+    src: url('/assets/fonts/GlacialIndifference-Bold.eot?#iefix')
+            format('embedded-opentype'),
+        url('/assets/fonts/GlacialIndifference-Bold.otf') format('opentype'),
+        url('/assets/fonts/GlacialIndifference-Bold.woff') format('woff'),
+        url('/assets/fonts/GlacialIndifference-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Glacial;
+    font-weight: normal;
+    font-style: normal;
+    src: url('/assets/fonts/GlacialIndifference-Regular.eot?#iefix')
+            format('embedded-opentype'),
+        url('/assets/fonts/GlacialIndifference-Regular.otf') format('opentype'),
+        url('/assets/fonts/GlacialIndifference-Regular.woff') format('woff'),
+        url('/assets/fonts/GlacialIndifference-Regular.ttf') format('truetype');
+}

@@ -1,0 +1,263 @@
+@import '../../utils/map-deep-get.scss';
+@import '../colors.scss';
+
+@mixin dark-tokens {
+    --filter-invert: invert(1);
+    // --logo: url(../img/fd/static/logo-dark.svg);
+    // https://tests.christianoliff.com/hex-to-css-filter-generator/
+    --persoonlijk-logo-filter: brightness(1) sepia(0.1) hue-rotate(175deg)
+        saturate(1) invert(1);
+
+    --product-background: #{map-deep-get($colors, 'colors', 'neutral', 0)};
+    --product-background-2: #{map-deep-get($colors, 'colors', 'neutral', 10)};
+    --content-background: #{map-deep-get($colors, 'colors', 'neutral', 10)};
+    --navigation-background: #{map-deep-get($colors, 'colors', 'neutral', 10)};
+    --navigation-item: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --navigation-item-active: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+    --opaque-label-background: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --opaque-label-longread-background: #{map-deep-get(
+            $colors,
+            'colors',
+            'longread',
+            50
+        )};
+    --opaque-label-persoonlijk-background: #{map-deep-get(
+            $colors,
+            'colors',
+            'persoonlijk',
+            50
+        )};
+    --dividers: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+    --content-copy: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --opaque-label-copy: #{map-deep-get($colors, 'colors', 'neutral', 100)};
+    --title-copy: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --meta-copy: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --quote: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --numberframe: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --textframe: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --wordframe: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --functional-copy: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --captions: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --credits: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --writer: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --time: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --primary: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --primary-active: #{map-deep-get($colors, 'colors', 'primary', 25)};
+    --breaking: #{map-deep-get($colors, 'colors', 'negative', 50)};
+    --breaking-label-copy: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --breaking-hover: #{map-deep-get($colors, 'colors', 'negative', 25)};
+
+    /**
+     * Card
+     */
+    --card: #{map-deep-get($colors, 'colors', 'neutral', 10)};
+    --card-active: #{map-deep-get($colors, 'colors', 'neutral', 0)};
+    --card-outline-active: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+    --card-box-shadow: none;
+    --card-visited: #{map-deep-get($colors, 'colors', 'neutral', 10)};
+    --card-text-visited: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --card-label-text-visited: #{map-deep-get($colors, 'colors', 'neutral', 10)};
+    --card-label-visited: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --card-hover: #{map-deep-get($colors, 'colors', 'neutral', 20)};
+    --card-2: #{map-deep-get($colors, 'colors', 'neutral', 20)};
+
+    /**
+     * Inputs
+     */
+    --search-bar: #{map-deep-get($colors, 'colors', 'neutral', 20)};
+    --input-background: #{map-deep-get($colors, 'colors', 'neutral', 20)};
+    // https://tests.christianoliff.com/hex-to-css-filter-generator/
+    --input-date-picker-calendar-fill: invert(86%) sepia(4%) saturate(747%)
+        hue-rotate(341deg) brightness(90%) contrast(90%);
+    --input-caret: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --input-placeholder: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --input-label: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --input-label-focus: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --input-color: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --input-underline: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --input-underline-disabled: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+    --input-underline-hover: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --input-underline-focus: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --input-valid: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --input-error: #{map-deep-get($colors, 'colors', 'negative', 50)};
+    --input-fill: #{map-deep-get($colors, 'colors', 'neutral', 100)};
+    --input-fill-disabled: #{map-deep-get($colors, 'colors', 'neutral', 20)};
+    --input-helper-text: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --input-helper-text-disabled: #{map-deep-get(
+            $colors,
+            'colors',
+            'neutral',
+            40
+        )};
+    --input-disabled: #{map-deep-get($colors, 'colors', 'neutral', 40)};
+    --select-placeholder: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --select-label: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --select-label-focus: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --select-color: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --select-underline: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --select-underline-disabled: #{map-deep-get(
+            $colors,
+            'colors',
+            'neutral',
+            30
+        )};
+    --select-underline-hover: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --select-underline-focus: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --select-valid: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --select-error: #{map-deep-get($colors, 'colors', 'negative', 50)};
+    --select-fill: #{map-deep-get($colors, 'colors', 'neutral', 100)};
+    --select-fill-disabled: #{map-deep-get($colors, 'colors', 'neutral', 20)};
+    --select-helper-text: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --select-helper-text-disabled: #{map-deep-get(
+            $colors,
+            'colors',
+            'neutral',
+            40
+        )};
+    --select-disabled: #{map-deep-get($colors, 'colors', 'neutral', 40)};
+    --checkbox-fill: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+    --checkbox-fill-checked: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --checkbox-check: #{map-deep-get($colors, 'colors', 'neutral', 100)};
+    --checkbox-border: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --checkbox-label-hover: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --checkbox-hover: #{map-deep-get($colors, 'colors', 'primary', 25)};
+    --radio-check: #{map-deep-get($colors, 'colors', 'neutral', 100)};
+    --radio-border: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --radio-label-hover: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --radio-fill: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+    --radio-fill-checked: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --radio-hover: #{map-deep-get($colors, 'colors', 'primary', 25)};
+    --switch-knob: #{map-deep-get($colors, 'colors', 'neutral', 80)};
+    --switch-fill: #{map-deep-get($colors, 'colors', 'neutral', 40)};
+    --switch-check-fill: #{map-deep-get($colors, 'colors', 'primary', 25)};
+    --switch-active: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --switch-label-hover: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --switch-hover: #{map-deep-get($colors, 'colors', 'primary', 25)};
+
+    /**
+     * Links
+     */
+    --link: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --link-hover: #{map-deep-get($colors, 'colors', 'primary', 25)};
+    --link-active: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --link-persoonlijk: #{map-deep-get($colors, 'colors', 'persoonlijk', 75)};
+    --link-persoonlijk-hover: #{map-deep-get(
+            $colors,
+            'colors',
+            'persoonlijk',
+            50
+        )};
+    --link-longread: #{map-deep-get($colors, 'colors', 'longread', 50)};
+    --link-longread-hover: #{map-deep-get($colors, 'colors', 'longread', 25)};
+
+    /**
+     * Stocks
+     */
+    --stock-negative: #{map-deep-get($colors, 'colors', 'negative', 25)};
+    --stock-negative-fill: #{map-deep-get($colors, 'colors', 'negative', 25)};
+    --stock-positive: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --stock-positive-fill: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --stock-closed: #{map-deep-get($colors, 'colors', 'neutral', 40)};
+
+    /**
+     * Buttons
+     */
+    --button-text: #{map-deep-get($colors, 'colors', 'neutral', 100)};
+    --button: #{map-deep-get($colors, 'colors', 'primary', 75)};
+    --button-outline: #{map-deep-get($colors, 'colors', 'secondary', 50)};
+    --button-hover: #{map-deep-get($colors, 'colors', 'primary', 100)};
+    --button-focus: #{map-deep-get($colors, 'colors', 'primary', 75)};
+    --button-active: #{map-deep-get($colors, 'colors', 'primary', 100)};
+    --button-disabled: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+    --button-cta-text: #{map-deep-get($colors, 'colors', 'neutral', 100)};
+    --button-cta: #{map-deep-get($colors, 'colors', 'secondary', 50)};
+    --button-cta-outline: #{map-deep-get($colors, 'colors', 'primary', 75)};
+    --button-cta-hover: #{map-deep-get($colors, 'colors', 'secondary', 75)};
+    --button-cta-focus: #{map-deep-get($colors, 'colors', 'secondary', 50)};
+    --button-cta-active: #{map-deep-get($colors, 'colors', 'secondary', 100)};
+    --button-cta-disabled: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --button-ghost-text: #{map-deep-get($colors, 'colors', 'neutral', 80)};
+    --button-ghost: transparent;
+    --button-ghost-outline: #{map-deep-get($colors, 'colors', 'primary', 100)};
+    --button-ghost-hover-outline: #{map-deep-get(
+            $colors,
+            'colors',
+            'primary',
+            75
+        )};
+    --button-ghost-hover: #{map-deep-get($colors, 'colors', 'primary', 75)};
+    --button-ghost-focus: #{map-deep-get($colors, 'colors', 'neutral', 80)};
+    --button-ghost-active-text: #{map-deep-get($colors, 'colors', 'primary', 75)};
+    --button-ghost-active: #{map-deep-get($colors, 'colors', 'primary', 25)};
+    --button-ghost-disabled: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+
+    --upsell-gradient: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.75) 50%,
+        rgba(0, 0, 0, 1) 90%
+    );
+
+    /**
+     * Article progress bar
+     */
+    --progress-bar: #{map-deep-get($colors, 'colors', 'primary', 100)};
+    --progression-bar: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --progress-bar-longread: #{map-deep-get($colors, 'colors', 'longread', 100)};
+    --progression-bar-longread: #{map-deep-get(
+            $colors,
+            'colors',
+            'longread',
+            50
+        )};
+
+    /**
+     * Article toolbar
+     */
+    --toolbar: #{map-deep-get($colors, 'colors', 'neutral', 20)};
+    --toolbar-hover-color: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --toolbar-longread-hover-color: #{map-deep-get(
+            $colors,
+            'colors',
+            'longread',
+            50
+        )};
+    --toolbar-icon: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --toolbar-horizontal: #{map-deep-get($colors, 'colors', 'neutral', 0)};
+    --toolbar-horizontal-icon: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --toolbar-horizontal-hover-color: #{map-deep-get(
+            $colors,
+            'colors',
+            'primary',
+            50
+        )};
+
+    /**
+     * Profile
+     */
+    --profile-background: #{map-deep-get($colors, 'colors', 'neutral', 20)};
+    --profile-copy: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --profile-link: #{map-deep-get($colors, 'colors', 'primary', 50)};
+    --profile-link-hover: #{map-deep-get($colors, 'colors', 'primary', 25)};
+    --profile-extra-navigation-item: #{map-deep-get(
+            $colors,
+            'colors',
+            'primary',
+            50
+        )};
+
+    /**
+     * Beurs
+     */
+    --radar-stock: #{map-deep-get($colors, 'colors', 'neutral', 50)};
+    --stock-ticker-stock: #{map-deep-get($colors, 'colors', 'neutral', 70)};
+    --stock-ticker-description: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --stock-ticker-negative: #{map-deep-get($colors, 'colors', 'negative', 50)};
+    --stock-ticker-price: #{map-deep-get($colors, 'colors', 'neutral', 70)};
+    --fondsnieuws-logo-color: white;
+
+    /**
+     * BNR Launcher
+     */
+    --bnr-launcher-background: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+}

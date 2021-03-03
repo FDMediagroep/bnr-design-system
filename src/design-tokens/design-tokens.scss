@@ -1,0 +1,30 @@
+@import './mixins/dark-tokens.scss';
+@import './mixins/light-tokens.scss';
+@import './typography/typography.scss';
+
+/**
+ * This is the place to put some design tokens.
+ * These are CSS Variables https://www.w3.org/TR/css-variables-1/.
+ * * https://www.caniuse.com/#feat=css-variables
+ */
+
+:root {
+    &.dark {
+        @include dark-tokens;
+    }
+
+    &.light,
+    & {
+        @include light-tokens;
+    }
+}
+
+:root,
+:root.system {
+    @media (prefers-color-scheme: dark) {
+        @include dark-tokens;
+    }
+    @media (prefers-color-scheme: light) {
+        @include light-tokens;
+    }
+}

@@ -1,0 +1,171 @@
+@import '../../utils/map-deep-get.scss';
+@import '../../design-tokens/typography.scss';
+@import '../../design-tokens/colors.scss';
+
+.fdInputSwitch {
+    input {
+        opacity: 0;
+        position: absolute;
+
+        &:hover ~ .switch,
+        &:focus ~ .switch {
+            outline: 1px solid var(--dividers);
+            // IE11
+            @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                outline: 1px solid #{map-deep-get(
+                        $colors,
+                        'colors',
+                        'neutral',
+                        50
+                    )};
+            }
+        }
+    }
+    .switch {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        width: 34px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 0.5rem;
+        cursor: pointer;
+        &:before {
+            content: '';
+            position: absolute;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+            transition: all 0.3s ease-out;
+            width: 100%;
+            height: 14px;
+            top: 0.25rem;
+            border-radius: 7px;
+            background-color: var(--switch-fill);
+            // IE11
+            @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                background-color: #{map-deep-get(
+                        $colors,
+                        'colors',
+                        'neutral',
+                        60
+                    )};
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            transition: all 0.3s ease-out;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24),
+                0 0 1px 0 rgba(0, 0, 0, 0.12);
+            border-style: solid;
+            border-width: 0.5px;
+            border-image-source: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.12),
+                rgba(255, 255, 255, 0.06) 20%,
+                rgba(255, 255, 255, 0)
+            );
+            border-image-slice: 1;
+            background-color: var(--switch-knob);
+            // IE11
+            @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                background-color: #{map-deep-get(
+                        $colors,
+                        'colors',
+                        'primary',
+                        60
+                    )};
+            }
+            left: 0;
+            top: 0;
+        }
+    }
+
+    input:focus,
+    input:hover {
+        ~ .switchLabel {
+            color: var(--switch-label-hover);
+            // IE11
+            @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                color: #{map-deep-get($colors, 'colors', 'primary', 75)};
+            }
+        }
+    }
+    input:hover {
+        ~ .switch {
+            &:before {
+                background-color: var(--switch-hover);
+                // IE11
+                @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                    background-color: #{map-deep-get(
+                            $colors,
+                            'colors',
+                            'primary',
+                            25
+                        )};
+                }
+            }
+        }
+    }
+
+    input:checked ~ .switch {
+        &:before {
+            background-color: var(--switch-check-fill);
+            // IE11
+            @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                background-color: #{map-deep-get(
+                        $colors,
+                        'colors',
+                        'primary',
+                        25
+                    )};
+            }
+        }
+        &:after {
+            left: calc(100% - 20px);
+            background-color: var(--switch-active);
+            // IE11
+            @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                background-color: #{map-deep-get(
+                        $colors,
+                        'colors',
+                        'persoonlijk',
+                        50
+                    )};
+            }
+        }
+    }
+
+    label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+        font-size: 1rem;
+        color: var(--content-copy);
+        // IE11
+        @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+            color: #{map-deep-get($colors, 'colors', 'neutral', 10)};
+        }
+        position: relative;
+        font-family: map-deep-get($typography, 'font-family', 'regular'),
+            sans-serif;
+    }
+
+    .switchLabel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
