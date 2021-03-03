@@ -10,7 +10,7 @@ export default class MyDocument extends Document<any> {
                     <meta name="msapplication-TileColor" content="#000000" />
 
                     <script src="/assets/cssbeautify.js" />
-                    <link href="/assets/fonts/style.css" rel="stylesheet" />
+                    <link href="/assets/fonts/fonts.css" rel="stylesheet" />
 
                     <meta property="og:site_name" content="BNR Design System" />
 

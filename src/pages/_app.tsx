@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../design-tokens/design-tokens.scss';
 import './_app.scss';
-import '../../public/assets/fonts/fonts.css';
 import './_app_markdown.scss';
 import './_app_a11y-dark.scss';
 import '@fdmg/design-system/components/card/HorizontalCard3.css';

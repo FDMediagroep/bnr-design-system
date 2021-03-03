@@ -286,7 +286,7 @@ function Explain(props: Props) {
                         <input
                             type="hidden"
                             name="resources"
-                            value={`${props.js_external},https://static.fd.nl/style-guide/assets/fonts/style.css,https://static.fd.nl/style-guide/assets/icons/style.css`}
+                            value={`${props.js_external},https://bnr-design-system.vercel.app/assets/fonts/fonts.css`}
                         />
                     </form>
                 </footer>
