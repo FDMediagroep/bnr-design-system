@@ -2,6 +2,9 @@
     "name": "@fdmg/bnr-design-system",
     "version": "0.1.1",
     "description": "BNR Design System",
+    "publishConfig": {
+        "access": "public"
+    },
     "types": "main.d.ts",
     "main": "main.js",
     "scripts": {
