@@ -1,6 +1,6 @@
 {
     "name": "@fdmg/bnr-design-system",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "BNR Design System",
     "types": "main.d.ts",
     "main": "main.js",
