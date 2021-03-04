@@ -103,13 +103,13 @@ function VerticalCard1(props: Props) {
                     {wrapWithAnchor(
                         props.href,
                         <a>
-                            <h2 className="heading sans s">{props.title}</h2>
+                            <h2 className="heading sans xs">{props.title}</h2>
                         </a>,
                         props.Link
                     )}
 
                     <div
-                        className={`${styles.madePossibleBy} body-text sans s`}
+                        className={`${styles.madePossibleBy} body-text sans xs`}
                     >
                         <span>
                             {props.madePossibleByPrefix ?? 'Een podcast van'}
