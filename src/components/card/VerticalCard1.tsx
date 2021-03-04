@@ -27,21 +27,18 @@ interface PictureProps extends CardProps {
     imageUrl: string;
 }
 
-interface FigCaptionProps extends CardProps {
-    madePossibleByPrefix?: string;
-    madePossibleBy: string;
-    madePossibleLink: string;
-}
-
 interface MetaProps extends CardProps {
     onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-interface Props extends CardProps, PictureProps, FigCaptionProps, MetaProps {
+interface Props extends CardProps, PictureProps, MetaProps {
     date: string;
     duration: string;
     footerUrl?: string;
     footerText?: string;
+    madePossibleByPrefix?: string;
+    madePossibleBy: string;
+    madePossibleLink: string;
     overlayImageCaption?: string;
     overlayImageUrl?: string;
     overlayLinkUrl?: string;
@@ -70,19 +67,6 @@ function Picture(props: PictureProps) {
             )}
             <img src={`${props.imageUrl}`} alt={props.caption ?? props.title} />
         </picture>
-    );
-}
-
-function FigCaption(props: FigCaptionProps) {
-    return (
-        <figcaption>
-            <h2 className="heading sans s">{props.title}</h2>
-
-            <div className={`${styles.madePossibleBy} body-text sans s`}>
-                <span>{props.madePossibleByPrefix ?? 'Een podcast van'}</span>{' '}
-                <a href={props.madePossibleLink}>{props.madePossibleBy}</a>
-            </div>
-        </figcaption>
     );
 }
 
@@ -115,13 +99,26 @@ function VerticalCard1(props: Props) {
                     </a>,
                     props.Link
                 )}
-                {wrapWithAnchor(
-                    props.href,
-                    <a>
-                        <FigCaption {...props} />
-                    </a>,
-                    props.Link
-                )}
+                <figcaption>
+                    {wrapWithAnchor(
+                        props.href,
+                        <a>
+                            <h2 className="heading sans s">{props.title}</h2>
+                        </a>,
+                        props.Link
+                    )}
+
+                    <div
+                        className={`${styles.madePossibleBy} body-text sans s`}
+                    >
+                        <span>
+                            {props.madePossibleByPrefix ?? 'Een podcast van'}
+                        </span>{' '}
+                        <a href={props.madePossibleLink}>
+                            {props.madePossibleBy}
+                        </a>
+                    </div>
+                </figcaption>
             </figure>
 
             {wrapWithAnchor(
