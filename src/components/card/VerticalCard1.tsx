@@ -19,12 +19,15 @@ interface CardProps {
     [x: string]: any;
 }
 
-interface FigureProps extends CardProps {
+interface PictureProps extends CardProps {
     caption?: string;
     imageUrlS?: string;
     imageUrlM?: string;
     imageUrlL?: string;
     imageUrl: string;
+}
+
+interface FigCaptionProps extends CardProps {
     madePossibleByPrefix?: string;
     madePossibleBy: string;
     madePossibleLink: string;
@@ -34,7 +37,7 @@ interface MetaProps extends CardProps {
     onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-interface Props extends CardProps, FigureProps, MetaProps {
+interface Props extends CardProps, PictureProps, FigCaptionProps, MetaProps {
     date: string;
     duration: string;
     footerUrl?: string;
@@ -44,48 +47,42 @@ interface Props extends CardProps, FigureProps, MetaProps {
     overlayLinkUrl?: string;
 }
 
-function Figure(props: FigureProps) {
+function Picture(props: PictureProps) {
     return (
-        <figure>
-            <picture>
-                {props.imageUrlS && (
-                    <source
-                        media="(max-width:639px)"
-                        srcSet={`${props.imageUrlS}`}
-                    />
-                )}
-                {props.imageUrlM && (
-                    <source
-                        media="(max-width:860px)"
-                        srcSet={`${props.imageUrlM}`}
-                    />
-                )}
-                {props.imageUrlL && (
-                    <source
-                        media="(min-width:861px)"
-                        srcSet={`${props.imageUrlL}`}
-                    />
-                )}
-                <a href={props.href} aria-label={props.title}>
-                    <img
-                        src={`${props.imageUrl}`}
-                        alt={props.caption ?? props.title}
-                    />
-                </a>
-            </picture>
-            <figcaption>
-                <a href={props.href} aria-label={props.title}>
-                    <h2 className="heading sans s">{props.title}</h2>
-                </a>
+        <picture>
+            {props.imageUrlS && (
+                <source
+                    media="(max-width:639px)"
+                    srcSet={`${props.imageUrlS}`}
+                />
+            )}
+            {props.imageUrlM && (
+                <source
+                    media="(max-width:860px)"
+                    srcSet={`${props.imageUrlM}`}
+                />
+            )}
+            {props.imageUrlL && (
+                <source
+                    media="(min-width:861px)"
+                    srcSet={`${props.imageUrlL}`}
+                />
+            )}
+            <img src={`${props.imageUrl}`} alt={props.caption ?? props.title} />
+        </picture>
+    );
+}
 
-                <div className={`${styles.madePossibleBy} body-text sans s`}>
-                    <span>
-                        {props.madePossibleByPrefix ?? 'Een podcast van'}
-                    </span>{' '}
-                    <a href={props.madePossibleLink}>{props.madePossibleBy}</a>
-                </div>
-            </figcaption>
-        </figure>
+function FigCaption(props: FigCaptionProps) {
+    return (
+        <figcaption>
+            <h2 className="heading sans s">{props.title}</h2>
+
+            <div className={`${styles.madePossibleBy} body-text sans s`}>
+                <span>{props.madePossibleByPrefix ?? 'Een podcast van'}</span>{' '}
+                <a href={props.madePossibleLink}>{props.madePossibleBy}</a>
+            </div>
+        </figcaption>
     );
 }
 
@@ -110,13 +107,22 @@ function VerticalCard1(props: Props) {
                 props.className ? ` ${props.className}` : ''
             }`}
         >
-            {wrapWithAnchor(
-                props.href,
-                <a>
-                    <Figure {...props} />
-                </a>,
-                props.Link
-            )}
+            <figure>
+                {wrapWithAnchor(
+                    props.href,
+                    <a>
+                        <Picture {...props} />
+                    </a>,
+                    props.Link
+                )}
+                {wrapWithAnchor(
+                    props.href,
+                    <a>
+                        <FigCaption {...props} />
+                    </a>,
+                    props.Link
+                )}
+            </figure>
 
             {wrapWithAnchor(
                 props.href,
