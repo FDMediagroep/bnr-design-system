@@ -469,7 +469,29 @@ function Foo() {
 
 ### Cards
 
-WIP
+<details>
+<summary>Button</summary>
+
+[Demo](https://bnr-design-system.vercel.app/button/default)
+
+Component CSS:
+
+```
+import "@fdmg/bnr-design-system/components/design-tokens/design-tokens.css";
+import "@fdmg/bnr-design-system/components/card/VerticalCard1.css";
+```
+
+```
+import { VerticalCard1 } from "@fdmg/bnr-design-system/components/card/VerticalCard1";
+
+function Foo() {
+    return (
+        <VerticalCard1 {...cardProps} />
+    );
+}
+```
+
+</details>
 
 ### Misc.
 
