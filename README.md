@@ -470,7 +470,7 @@ function Foo() {
 ### Cards
 
 <details>
-<summary>Button</summary>
+<summary>Vertical card 1</summary>
 
 [Demo](https://bnr-design-system.vercel.app/button/default)
 
