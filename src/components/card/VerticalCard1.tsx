@@ -7,6 +7,7 @@ interface CardProps {
     href: string;
     /**
      * Link element e.g.: next/link
+     * If nothing is passed then a regular HTMLAnchorElement is used.
      */
     Link?: (
         props: React.PropsWithChildren<LinkProps>
