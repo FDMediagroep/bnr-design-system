@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 export const metaTitle = 'BNR Design System';
 export const metaDescription =
-    'Collection of all the styled components for FD.nl';
+    'Collection of all the styled components for BNR.nl';
 
 interface Props {
     readme: string;
