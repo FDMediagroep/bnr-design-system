@@ -5,7 +5,7 @@ interface Props {
     date: string;
     duration: string;
     href: string;
-    madePossibleByPrefix: string;
+    madePossibleByPrefix?: string;
     madePossibleBy: string;
     madePossibleLink: string;
     imageUrlS?: string;
@@ -14,6 +14,7 @@ interface Props {
     imageUrl: string;
     footerUrl?: string;
     footerText?: string;
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
     overlayImageCaption?: string;
     overlayImageUrl?: string;
     overlayLinkUrl?: string;
@@ -78,7 +79,7 @@ function VerticalCard1(props: Props) {
                         <span className={styles.dot} />
                         <time>{props.duration}</time>
                     </section>
-                    <button>Play</button>
+                    <button onClick={props.onClick}>Play</button>
                 </section>
 
                 {props.footerText ? (
