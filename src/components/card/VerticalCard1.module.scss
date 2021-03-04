@@ -1,48 +1,40 @@
 .verticalCard1 {
-    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
     box-shadow: 1px 1px 9px 0 rgb(0 0 0 / 10%);
-    text-decoration: none;
     background-color: var(--card);
-    &:hover {
-        text-decoration: none;
-    }
-    article {
-        flex: 1 1 auto;
+
+    figure {
         position: relative;
-        overflow: hidden;
-        flex-direction: column;
-
-        figure {
-            position: relative;
-            margin: 0;
+        margin: 0;
+        width: 100%;
+        img {
             width: 100%;
-            img {
-                width: 100%;
-            }
+        }
 
-            figcaption {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                padding: 1rem;
-                z-index: 1;
-            }
-            &:after {
-                position: absolute;
-                content: '';
-                left: 0;
-                right: 0;
-                bottom: 0;
-                height: 122px;
-                width: 100%;
-                opacity: 1;
-                background: linear-gradient(
-                    -180deg,
-                    rgba(0, 0, 0, 0) 0%,
-                    rgb(0, 0, 0) 100%
-                );
-            }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            z-index: 1;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 122px;
+            width: 100%;
+            opacity: 1;
+            background: linear-gradient(
+                -180deg,
+                rgba(0, 0, 0, 0) 0%,
+                rgb(0, 0, 0) 100%
+            );
         }
     }
 

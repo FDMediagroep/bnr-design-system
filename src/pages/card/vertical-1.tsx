@@ -5,6 +5,7 @@ import {
     getCssClassNames,
 } from '../../components/card/VerticalCard1';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const verticalCards1: any = [
     {
@@ -71,6 +72,25 @@ function Page() {
             >
                 <>
                     <VerticalCard1 {...verticalCards1[0]} />
+                </>
+            </Explain>
+
+            <Explain
+                anchor="vertical1-next-link"
+                cssClassNames={getCssClassNames()}
+                legend="Vertical Card 1 next/link"
+                reactComponentName="VerticalCard1"
+                description={
+                    <>
+                        <p>Used on ...</p>
+                        <ul>
+                            <li>next/link</li>
+                        </ul>
+                    </>
+                }
+            >
+                <>
+                    <VerticalCard1 {...verticalCards1[0]} Link={Link} />
                 </>
             </Explain>
         </>
