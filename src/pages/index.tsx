@@ -11,7 +11,7 @@ interface Props {
     readme: string;
 }
 
-const baseUrl = 'https://design-system.fd.nl';
+const baseUrl = 'https://bnr-design-system.vercel.app';
 
 function Page(props: Props) {
     const router = useRouter();
