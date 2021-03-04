@@ -472,7 +472,7 @@ function Foo() {
 <details>
 <summary>Vertical card 1</summary>
 
-[Demo](https://bnr-design-system.vercel.app/button/default)
+[Demo](https://bnr-design-system.vercel.app/card/vertical-1)
 
 Component CSS:
 
