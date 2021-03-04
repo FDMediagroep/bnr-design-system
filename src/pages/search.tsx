@@ -187,20 +187,20 @@ export default function page() {
                 <title>Search - Design System - Het Financieele Dagblad</title>
                 <meta
                     name="description"
-                    content="Search components in the FD Design System"
+                    content="Search components in the BNR Design System"
                 />
-                <meta property="og:title" content="Search FD Design System" />
+                <meta property="og:title" content="Search BNR Design System" />
                 <meta
                     property="og:description"
-                    content="Search components in the FD Design System"
+                    content="Search components in the BNR Design System"
                 />
                 <meta
                     property="twitter:title"
-                    content="Search FD Design System"
+                    content="Search BNR Design System"
                 />
                 <meta
                     property="twitter:description"
-                    content="Search components in the FD Design System"
+                    content="Search components in the BNR Design System"
                 />
             </Head>
 

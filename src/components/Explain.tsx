@@ -235,7 +235,7 @@ function Explain(props: Props) {
                             type="hidden"
                             name="data"
                             value={getCodePenData(
-                                'Fd Test Component',
+                                'BNR Test Component',
                                 [],
                                 html,
                                 css,

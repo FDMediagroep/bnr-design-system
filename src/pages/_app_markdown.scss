@@ -2,29 +2,6 @@
 @import '../design-tokens/colors.scss';
 @import '../design-tokens/typography.scss';
 
-html.dark {
-    .markdown {
-        img[alt='FD Design System'] {
-            background-color: #{map-deep-get($colors, 'colors', 'neutral', 80)};
-        }
-    }
-}
-html:not(.light),
-html.system {
-    @media (prefers-color-scheme: dark) {
-        .markdown {
-            img[alt='FD Design System'] {
-                background-color: #{map-deep-get(
-                        $colors,
-                        'colors',
-                        'neutral',
-                        80
-                    )};
-            }
-        }
-    }
-}
-
 .markdown {
     color: var(--content-copy);
     // IE11
@@ -73,7 +50,7 @@ html.system {
         }
     }
 
-    img[alt='FD Design System'] {
+    img[alt='BNR Design System'] {
         padding: 37px 1rem;
         border-radius: 15px;
     }

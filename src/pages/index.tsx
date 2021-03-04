@@ -3,7 +3,7 @@ import Head from 'next/head';
 import ReactMD from 'react-markdown/with-html';
 import { useRouter } from 'next/router';
 
-export const metaTitle = 'FD Design System';
+export const metaTitle = 'BNR Design System';
 export const metaDescription =
     'Collection of all the styled components for FD.nl';
 
