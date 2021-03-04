@@ -18,6 +18,7 @@ interface Props {
     overlayImageCaption?: string;
     overlayImageUrl?: string;
     overlayLinkUrl?: string;
+    title: string;
     [x: string]: any;
 }
 function VerticalCard1(props: Props) {
