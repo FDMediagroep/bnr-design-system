@@ -62,10 +62,13 @@
         align-items: center;
         color: var(--meta-copy);
 
-        > section {
+        > a {
             flex: 1 1 auto;
             display: flex;
-            align-items: center;
+            > section {
+                display: flex;
+                align-items: center;
+            }
         }
         .dot {
             height: 2px;
