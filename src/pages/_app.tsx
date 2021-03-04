@@ -167,6 +167,19 @@ function App({ Component, pageProps }) {
                         ],
                     },
                     {
+                        text: 'Cards',
+                        isToggle: true,
+                        menuItems: [
+                            {
+                                component: (
+                                    <Link href="/card/vertical-1">
+                                        <a>VerticalCard1</a>
+                                    </Link>
+                                ),
+                            },
+                        ],
+                    },
+                    {
                         text: 'Controls',
                         isToggle: true,
                         menuItems: [

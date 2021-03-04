@@ -75,6 +75,11 @@ module.exports = {
         minimize: true,
     },
     entry: {
+        // Cards
+        '/components/card/VerticalCard1': [
+            './src/components/card/VerticalCard1.tsx',
+        ],
+
         // Design Tokens
         '/components/design-tokens/icons': ['./src/design-tokens/icons.ts'],
         '/components/design-tokens/design-tokens': [

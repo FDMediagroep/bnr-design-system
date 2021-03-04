@@ -1,0 +1,145 @@
+.verticalCard1 {
+    display: flex;
+    box-shadow: 1px 1px 9px 0 rgb(0 0 0 / 10%);
+    text-decoration: none;
+    background-color: var(--card);
+    &:hover {
+        text-decoration: none;
+    }
+    article {
+        flex: 1 1 auto;
+        position: relative;
+        overflow: hidden;
+        flex-direction: column;
+
+        figure {
+            position: relative;
+            margin: 0;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+
+            figcaption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 1rem;
+                z-index: 1;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 122px;
+                width: 100%;
+                opacity: 1;
+                background: linear-gradient(
+                    -180deg,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgb(0, 0, 0) 100%
+                );
+            }
+        }
+    }
+
+    h2 {
+        white-space: normal;
+        margin: 0.5rem 0;
+        color: white;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .madePossibleBy {
+        color: var(--meta-copy);
+        a {
+            color: var(--accent-1);
+        }
+    }
+
+    .meta {
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        color: var(--meta-copy);
+
+        > section {
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+        }
+        .dot {
+            height: 2px;
+            width: 2px;
+            margin: 0 10px;
+            background-color: var(--accent-1);
+            border-radius: 50%;
+            display: inline-block;
+        }
+        button {
+            flex: 0 1 auto;
+        }
+    }
+
+    footer {
+        margin: 1rem;
+        text-transform: uppercase;
+        color: var(--accent-2);
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 105px 105px 0;
+        border-color: transparent #ffffff transparent transparent;
+
+        figure {
+            display: block;
+            width: 105px;
+            height: 105px;
+            box-sizing: border-box;
+            margin: 0;
+            z-index: 1;
+
+            &:after {
+                content: 'brand stories';
+                display: flex;
+                color: black;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                position: absolute;
+                background: var(--accent-1);
+                font-family: GlacialBold, sans-serif;
+                font-size: 11px;
+                font-weight: bold;
+                letter-spacing: 1.2px;
+                top: 29px;
+                left: -12px;
+                width: 150px;
+                height: 27.5px;
+                transform: rotate(45deg);
+                box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+            }
+        }
+        .image {
+            position: absolute;
+            top: 2px;
+            right: 0;
+            max-width: 30px;
+            max-height: 30px;
+            object-fit: cover;
+        }
+    }
+}

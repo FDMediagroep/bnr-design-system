@@ -3,8 +3,6 @@
 
 @mixin light-tokens {
     --filter-invert: invert(0);
-    // --logo: url(../img/fd/static/logo.svg);
-    --persoonlijk-logo-filter: none;
 
     --product-background: #{map-deep-get($colors, 'colors', 'neutral', 100)};
     --product-background-2: #{map-deep-get($colors, 'colors', 'neutral', 90)};
@@ -13,42 +11,29 @@
     --navigation-item: #{map-deep-get($colors, 'colors', 'neutral', 30)};
     --navigation-item-active: #{map-deep-get($colors, 'colors', 'neutral', 60)};
     --opaque-label-background: #{map-deep-get($colors, 'colors', 'primary', 75)};
-    --opaque-label-longread-background: #{map-deep-get(
-            $colors,
-            'colors',
-            'longread',
-            75
-        )};
-    --opaque-label-persoonlijk-background: #{map-deep-get(
-            $colors,
-            'colors',
-            'persoonlijk',
-            75
-        )};
     --dividers: #{map-deep-get($colors, 'colors', 'neutral', 60)};
     --content-copy: #{map-deep-get($colors, 'colors', 'neutral', 10)};
     --opaque-label-copy: #{map-deep-get($colors, 'colors', 'neutral', 100)};
     --title-copy: #{map-deep-get($colors, 'colors', 'neutral', 10)};
-    --meta-copy: #{map-deep-get($colors, 'colors', 'neutral', 30)};
-    --quote: #{map-deep-get($colors, 'colors', 'neutral', 30)};
-    --numberframe: #{map-deep-get($colors, 'colors', 'neutral', 30)};
-    --textframe: #{map-deep-get($colors, 'colors', 'neutral', 30)};
-    --wordframe: #{map-deep-get($colors, 'colors', 'neutral', 30)};
-    --functional-copy: #{map-deep-get($colors, 'colors', 'neutral', 30)};
+    --meta-copy: #{map-deep-get($colors, 'colors', 'neutral', 60)};
+    --meta-link-copy: #{map-deep-get($colors, 'colors', 'secondary', 25)};
     --captions: #{map-deep-get($colors, 'colors', 'neutral', 30)};
     --credits: #{map-deep-get($colors, 'colors', 'neutral', 40)};
     --writer: #{map-deep-get($colors, 'colors', 'neutral', 30)};
     --time: #{map-deep-get($colors, 'colors', 'neutral', 30)};
     --primary: #{map-deep-get($colors, 'colors', 'primary', 75)};
     --primary-active: #{map-deep-get($colors, 'colors', 'primary', 100)};
-    --breaking: #{map-deep-get($colors, 'colors', 'negative', 75)};
-    --breaking-label-copy: #{map-deep-get($colors, 'colors', 'neutral', 90)};
-    --breaking-hover: #{map-deep-get($colors, 'colors', 'negative', 100)};
+
+    /**
+     * Accent
+     */
+    --accent-1: #{map-deep-get($colors, 'colors', 'accent', 1)};
+    --accent-2: #{map-deep-get($colors, 'colors', 'accent', 2)};
 
     /**
      * Card
      */
-    --card: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+    --card: #{map-deep-get($colors, 'colors', 'neutral', 100)};
     --card-active: #{map-deep-get($colors, 'colors', 'neutral', 80)};
     --card-outline-active: #{map-deep-get($colors, 'colors', 'neutral', 60)};
     --card-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
@@ -138,24 +123,6 @@
     --link: #{map-deep-get($colors, 'colors', 'primary', 75)};
     --link-hover: #{map-deep-get($colors, 'colors', 'primary', 50)};
     --link-active: #{map-deep-get($colors, 'colors', 'primary', 75)};
-    --link-persoonlijk: #{map-deep-get($colors, 'colors', 'persoonlijk', 75)};
-    --link-persoonlijk-hover: #{map-deep-get(
-            $colors,
-            'colors',
-            'persoonlijk',
-            50
-        )};
-    --link-longread: #{map-deep-get($colors, 'colors', 'longread', 75)};
-    --link-longread-hover: #{map-deep-get($colors, 'colors', 'longread', 25)};
-
-    /**
-     * Stocks
-     */
-    --stock-negative: #{map-deep-get($colors, 'colors', 'negative', 50)};
-    --stock-negative-fill: #{map-deep-get($colors, 'colors', 'negative', 25)};
-    --stock-positive: #{map-deep-get($colors, 'colors', 'primary', 75)};
-    --stock-positive-fill: #{map-deep-get($colors, 'colors', 'primary', 50)};
-    --stock-closed: #{map-deep-get($colors, 'colors', 'neutral', 40)};
 
     /**
      * Buttons
@@ -195,67 +162,4 @@
         rgba(255, 234, 219, 0.75) 50%,
         rgba(255, 234, 219, 1) 90%
     );
-
-    /**
-     * Article progress bar
-     */
-    --progress-bar: #{map-deep-get($colors, 'colors', 'primary', 25)};
-    --progression-bar: #{map-deep-get($colors, 'colors', 'primary', 75)};
-    --progress-bar-longread: #{map-deep-get($colors, 'colors', 'longread', 25)};
-    --progression-bar-longread: #{map-deep-get(
-            $colors,
-            'colors',
-            'longread',
-            75
-        )};
-
-    /**
-     * Article toolbar
-     */
-    --toolbar: #{map-deep-get($colors, 'colors', 'neutral', 80)};
-    --toolbar-hover-color: #{map-deep-get($colors, 'colors', 'primary', 75)};
-    --toolbar-longread-hover-color: #{map-deep-get(
-            $colors,
-            'colors',
-            'longread',
-            75
-        )};
-    --toolbar-icon: #{map-deep-get($colors, 'colors', 'neutral', 40)};
-    --toolbar-horizontal: #{map-deep-get($colors, 'colors', 'neutral', 0)};
-    --toolbar-horizontal-icon: #{map-deep-get($colors, 'colors', 'neutral', 50)};
-    --toolbar-horizontal-hover-color: #{map-deep-get(
-            $colors,
-            'colors',
-            'primary',
-            50
-        )};
-
-    /**
-     * Profile
-     */
-    --profile-background: #{map-deep-get($colors, 'colors', 'primary', 75)};
-    --profile-copy: #{map-deep-get($colors, 'colors', 'neutral', 90)};
-    --profile-link: #{map-deep-get($colors, 'colors', 'neutral', 90)};
-    --profile-link-hover: #{map-deep-get($colors, 'colors', 'neutral', 90)};
-    --profile-extra-navigation-item: #{map-deep-get(
-            $colors,
-            'colors',
-            'neutral',
-            30
-        )};
-
-    /**
-     * Beurs
-     */
-    --radar-stock: #{map-deep-get($colors, 'colors', 'neutral', 20)};
-    --stock-ticker-stock: #666;
-    --stock-ticker-description: #{map-deep-get($colors, 'colors', 'neutral', 30)};
-    --stock-ticker-negative: #c60f0f;
-    --stock-ticker-price: #333;
-    --fondsnieuws-logo-color: #000;
-
-    /**
-     * BNR Launcher
-     */
-    --bnr-launcher-background: #{map-deep-get($colors, 'colors', 'neutral', 0)};
 }

@@ -1,6 +1,9 @@
 export * as DesignTokens from './design-tokens/design-tokens';
 export * from './design-tokens/icons';
 
+// Cards
+export { VerticalCard1 } from './components/card/VerticalCard1';
+
 // Controls
 export { Checkbox } from './components/input/Checkbox';
 export { Radio } from './components/input/Radio';
