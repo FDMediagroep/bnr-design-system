@@ -1,16 +1,22 @@
+import { LinkProps } from 'next/link';
 import React from 'react';
 
 /**
  *
  * @param href
  * @param child JSX.Element
- * @param Link
+ * @param Link next/link
  * @returns
  */
 export function wrapWithAnchor(
     href: string,
     child: JSX.Element,
-    Link?: React.ElementType
+    Link?: (
+        props: React.PropsWithChildren<LinkProps>
+    ) => React.DetailedReactHTMLElement<
+        React.AnchorHTMLAttributes<HTMLAnchorElement>,
+        HTMLElement
+    >
 ) {
     if (Link) {
         return <Link href={href}>{child}</Link>;
