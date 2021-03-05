@@ -73,9 +73,13 @@ function Picture(props: PictureProps) {
 function Meta(props: MetaProps) {
     return (
         <section className="body-text sans xs">
-            <time>{props.date}</time>
-            <span className={styles.dot} />
-            <time>{props.duration}</time>
+            {props.date ? <time>{props.date}</time> : null}
+            {props.duration ? (
+                <>
+                    <span className={styles.dot} />
+                    <time>{props.duration}</time>
+                </>
+            ) : null}
         </section>
     );
 }
@@ -118,16 +122,20 @@ function VerticalCard1(props: Props) {
                 </figcaption>
             </figure>
 
-            <section className={styles.meta}>
-                {wrapWithAnchor(
-                    props.href,
-                    <a>
-                        <Meta {...props} />
-                    </a>,
-                    props.Link
-                )}
-                <button onClick={props.onClick}>Play</button>
-            </section>
+            {props.date || props.duration || props.onClick ? (
+                <section className={styles.meta}>
+                    {wrapWithAnchor(
+                        props.href,
+                        <a>
+                            <Meta {...props} />
+                        </a>,
+                        props.Link
+                    )}
+                    {props.onClick ? (
+                        <button onClick={props.onClick}>Play</button>
+                    ) : null}
+                </section>
+            ) : null}
 
             {props.footerText ? (
                 <footer className="body-text sans bold xs">
