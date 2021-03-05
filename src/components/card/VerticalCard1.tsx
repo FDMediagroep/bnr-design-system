@@ -32,13 +32,13 @@ interface MetaProps extends CardProps {
 }
 
 interface Props extends CardProps, PictureProps, MetaProps {
-    date: string;
-    duration: string;
+    date?: string;
+    duration?: string;
     footerUrl?: string;
     footerText?: string;
     madePossibleByPrefix?: string;
-    madePossibleBy: string;
-    madePossibleLink: string;
+    madePossibleBy?: string;
+    madePossibleLink?: string;
     overlayImageCaption?: string;
     overlayImageUrl?: string;
     overlayLinkUrl?: string;
@@ -109,16 +109,19 @@ function VerticalCard1(props: Props) {
                         props.Link
                     )}
 
-                    <div
-                        className={`${styles.madePossibleBy} body-text sans xs`}
-                    >
-                        <span>
-                            {props.madePossibleByPrefix ?? 'Een podcast van'}
-                        </span>{' '}
-                        <a href={props.madePossibleLink}>
-                            {props.madePossibleBy}
-                        </a>
-                    </div>
+                    {props.madePossibleBy && props.madePossibleLink ? (
+                        <div
+                            className={`${styles.madePossibleBy} body-text sans xs`}
+                        >
+                            <span>
+                                {props.madePossibleByPrefix ??
+                                    'Een podcast van'}
+                            </span>{' '}
+                            <a href={props.madePossibleLink}>
+                                {props.madePossibleBy}
+                            </a>
+                        </div>
+                    ) : null}
                 </figcaption>
             </figure>
 
