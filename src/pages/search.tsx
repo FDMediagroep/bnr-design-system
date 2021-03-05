@@ -26,6 +26,12 @@ import {
     metaTitle as buttonGhostTitle,
     metaDescription as buttonGhostDescription,
 } from './button/ghost';
+
+import {
+    metaTitle as verticalCard1Title,
+    metaDescription as verticalCard1Description,
+} from './card/vertical-1';
+
 import {
     metaTitle as gridTitle,
     metaDescription as gridDescription,
@@ -94,6 +100,10 @@ const searchIndex: SearchIndex = {
     '/button/ghost': {
         title: buttonGhostTitle,
         description: buttonGhostDescription,
+    },
+    '/card/vertical-1': {
+        title: verticalCard1Title,
+        description: verticalCard1Description,
     },
     '/grid': {
         title: gridTitle,
