@@ -11,10 +11,6 @@
     align-items: center;
     justify-content: center;
     background-color: var(--navigation-background);
-    // IE11
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        background-color: #{map-deep-get($colors, 'colors', 'neutral', 70)};
-    }
 
     .menuCenter {
         display: inline-flex;
@@ -57,77 +53,19 @@
                     width: 100%;
                     background-color: var(--navigation-background);
                     border-bottom: 1px solid var(--dividers);
-                    // IE11
-                    @media screen and (-ms-high-contrast: active),
-                        (-ms-high-contrast: none) {
-                        background-color: #{map-deep-get(
-                                $colors,
-                                'colors',
-                                'neutral',
-                                70
-                            )};
-                        border-bottom: #{map-deep-get(
-                                $colors,
-                                'colors',
-                                'neutral',
-                                60
-                            )};
-                    }
                     &:first-child {
                         border-top: 1px solid var(--dividers);
-                        // IE11
-                        @media screen and (-ms-high-contrast: active),
-                            (-ms-high-contrast: none) {
-                            border-top: #{map-deep-get(
-                                    $colors,
-                                    'colors',
-                                    'neutral',
-                                    60
-                                )};
-                        }
                     }
 
                     // sub sub-menus.
                     li {
                         background-color: var(--dividers);
                         border-bottom: 1px solid var(--navigation-background);
-                        // IE11
-                        @media screen and (-ms-high-contrast: active),
-                            (-ms-high-contrast: none) {
-                            background-color: #{map-deep-get(
-                                    $colors,
-                                    'colors',
-                                    'neutral',
-                                    60
-                                )};
-                            border-bottom: #{map-deep-get(
-                                    $colors,
-                                    'colors',
-                                    'neutral',
-                                    70
-                                )};
-                        }
 
                         // sub sub sub-menus
                         li {
                             background-color: var(--navigation-background);
                             border-bottom: 1px solid var(--dividers);
-                            // IE11
-                            @media screen and (-ms-high-contrast: active),
-                                (-ms-high-contrast: none) {
-                                border-bottom: #{map-deep-get(
-                                        $colors,
-                                        'colors',
-                                        'neutral',
-                                        60
-                                    )};
-                                background-color: #{map-deep-get(
-                                        $colors,
-                                        'colors',
-                                        'neutral',
-                                        70
-                                    )};
-                            }
                         }
                     }
                 }
@@ -160,16 +98,6 @@
             max-height: calc(100vh - 55px);
             top: 55px;
             background-color: var(--navigation-background);
-            // IE11
-            @media screen and (-ms-high-contrast: active),
-                (-ms-high-contrast: none) {
-                background-color: #{map-deep-get(
-                        $colors,
-                        'colors',
-                        'neutral',
-                        70
-                    )};
-            }
             @media screen and (min-width: map-deep-get($media, 'sizes', 'm')) {
                 width: 300px;
                 max-height: 60vh;
@@ -204,14 +132,6 @@
                 color: var(--link-hover);
                 text-decoration: underline;
             }
-            // IE11
-            @media screen and (-ms-high-contrast: active),
-                (-ms-high-contrast: none) {
-                color: #{map-deep-get($colors, 'colors', 'neutral', 30)};
-                &:hover {
-                    color: #{map-deep-get($colors, 'colors', 'primary', 50)};
-                }
-            }
         }
 
         .subMenuToggleButton {
@@ -224,20 +144,10 @@
                 width: 1rem;
                 height: 1rem;
                 fill: var(--content-copy);
-                // IE11
-                @media screen and (-ms-high-contrast: active),
-                    (-ms-high-contrast: none) {
-                    color: #{map-deep-get($colors, 'colors', 'neutral', 10)};
-                }
             }
             &:hover {
                 svg {
                     fill: var(--link-hover);
-                    // IE11
-                    @media screen and (-ms-high-contrast: active),
-                        (-ms-high-contrast: none) {
-                        color: #{map-deep-get($colors, 'colors', 'primary', 50)};
-                    }
                 }
             }
         }
@@ -265,14 +175,6 @@
         color: var(--navigation-item);
         &:hover {
             color: var(--link-hover);
-        }
-        // IE11
-        @media screen and (-ms-high-contrast: active),
-            (-ms-high-contrast: none) {
-            color: #{map-deep-get($colors, 'colors', 'neutral', 30)};
-            &:hover {
-                color: #{map-deep-get($colors, 'colors', 'primary', 50)};
-            }
         }
     }
     #more-menu {
@@ -303,11 +205,6 @@
         -webkit-border-radius: 0.25rem;
         border-radius: 0.25rem;
         background: var(--dividers);
-        // IE11
-        @media screen and (-ms-high-contrast: active),
-            (-ms-high-contrast: none) {
-            background: #{map-deep-get($colors, 'colors', 'neutral', 50)};
-        }
     }
 
     ::-webkit-scrollbar-thumb {
