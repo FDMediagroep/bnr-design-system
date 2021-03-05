@@ -8,14 +8,17 @@
         font-family: map-deep-get($typography, 'font-family', 'regular'),
             sans-serif;
         &.bold {
-            font-family: map-deep-get($typography, 'font-family', 'regular'),
+            font-family: map-deep-get($typography, 'font-family', 'bold'),
                 sans-serif;
-            &.slim {
-                font-family: map-deep-get($typography, 'font-family', 'slim'),
-                    sans-serif;
+        }
+        &.slim {
+            font-family: map-deep-get($typography, 'font-family', 'slim'),
+                sans-serif;
+            &.bold {
                 font-weight: bold;
             }
         }
+
         &.xs {
             font-size: #{map-deep-get(
                     $typography,
@@ -148,6 +151,11 @@
             font-family: map-deep-get($typography, 'font-family', 'bold'),
                 sans-serif;
         }
+        &.slim {
+            font-family: map-deep-get($typography, 'font-family', 'slim'),
+                sans-serif;
+        }
+
         &.xs {
             font-size: #{map-deep-get(
                     $typography,

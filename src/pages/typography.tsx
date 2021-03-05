@@ -25,31 +25,11 @@ function Page() {
 
             <Explain
                 cssClassNames={['heading']}
-                legend="Heading serif"
+                legend="Heading sans"
                 hideReact={true}
                 description={
                     <>
-                        <p>Example of serif headings.</p>
-                    </>
-                }
-            >
-                <>
-                    <h1 className="heading serif xs">Heading serif xs</h1>
-                    <h1 className="heading serif s">Heading serif s</h1>
-                    <h1 className="heading serif m">Heading serif m</h1>
-                    <h1 className="heading serif l">Heading serif l</h1>
-                    <h1 className="heading serif xl">Heading serif xl</h1>
-                    <h1 className="heading serif xxl">Heading serif xxl</h1>
-                </>
-            </Explain>
-
-            <Explain
-                cssClassNames={['heading']}
-                legend="Heading sans-serif"
-                hideReact={true}
-                description={
-                    <>
-                        <p>Example of sans-serif headings.</p>
+                        <p>Example of sans headings.</p>
                     </>
                 }
             >
@@ -65,77 +45,53 @@ function Page() {
 
             <Explain
                 cssClassNames={['heading']}
-                legend="Heading regular sans-serif"
+                legend="Heading sans-serif bold"
                 hideReact={true}
                 description={
                     <>
-                        <p>Example of regular sans-serif headings.</p>
+                        <p>Example of sans-serif bold headings.</p>
                     </>
                 }
             >
                 <>
-                    <h1 className="heading sans regular xs">
-                        Heading sans regular xs
+                    <h1 className="heading sans bold xs">
+                        Heading sans bold xs
                     </h1>
-                    <h1 className="heading sans regular s">
-                        Heading sans regular s
+                    <h1 className="heading sans bold s">Heading sans bold s</h1>
+                    <h1 className="heading sans bold m">Heading sans bold m</h1>
+                    <h1 className="heading sans bold l">Heading sans bold l</h1>
+                    <h1 className="heading sans bold xl">
+                        Heading sans bold xl
                     </h1>
-                    <h1 className="heading sans regular m">
-                        Heading sans regular m
-                    </h1>
-                    <h1 className="heading sans regular l">
-                        Heading sans regular l
-                    </h1>
-                    <h1 className="heading sans regular xl">
-                        Heading sans regular xl
-                    </h1>
-                    <h1 className="heading sans regular xxl">
-                        Heading sans regular xxl
+                    <h1 className="heading sans bold xxl">
+                        Heading sans bold xxl
                     </h1>
                 </>
             </Explain>
 
             <Explain
-                cssClassNames={['body-text']}
-                legend="Body text serif"
+                cssClassNames={['heading']}
+                legend="Heading sans-serif slim"
                 hideReact={true}
                 description={
                     <>
-                        <p>Example of serif body text.</p>
+                        <p>Example of sans-serif slim headings.</p>
                     </>
                 }
             >
                 <>
-                    <p className="body-text serif xs">body-text serif xs</p>
-                    <p className="body-text serif s">body-text serif s</p>
-                    <p className="body-text serif m">Reserved</p>
-                    <p className="body-text serif l">Reserved</p>
-                    <p className="body-text serif xl">Reserved</p>
-                    <p className="body-text serif xxl">Reserved</p>
-                </>
-            </Explain>
-
-            <Explain
-                cssClassNames={['body-text']}
-                legend="Body text serif bold"
-                hideReact={true}
-                description={
-                    <>
-                        <p>Example of serif bold body text.</p>
-                    </>
-                }
-            >
-                <>
-                    <p className="body-text serif xs bold">
-                        body-text serif xs bold
-                    </p>
-                    <p className="body-text serif s bold">
-                        body-text serif s bold
-                    </p>
-                    <p className="body-text serif m bold">Reserved</p>
-                    <p className="body-text serif l bold">Reserved</p>
-                    <p className="body-text serif xl bold">Reserved</p>
-                    <p className="body-text serif xxl bold">Reserved</p>
+                    <h1 className="heading sans slim xs">
+                        Heading sans slim xs
+                    </h1>
+                    <h1 className="heading sans slim s">Heading sans slim s</h1>
+                    <h1 className="heading sans slim m">Heading sans slim m</h1>
+                    <h1 className="heading sans slim l">Heading sans slim l</h1>
+                    <h1 className="heading sans slim xl">
+                        Heading sans slim xl
+                    </h1>
+                    <h1 className="heading sans slim xxl">
+                        Heading sans slim xxl
+                    </h1>
                 </>
             </Explain>
 
@@ -145,7 +101,7 @@ function Page() {
                 hideReact={true}
                 description={
                     <>
-                        <p>Example of sans-serif body text.</p>
+                        <p>Example of body text sans-serif.</p>
                     </>
                 }
             >
@@ -165,23 +121,49 @@ function Page() {
                 hideReact={true}
                 description={
                     <>
-                        <p>Example of sans-serif bold body text.</p>
+                        <p>Example of body text sans-serif bold.</p>
                     </>
                 }
             >
                 <>
-                    <p className="body-text sans xs bold">
-                        body-text sans xs bold
+                    <p className="body-text sans bold xs">
+                        body-text sans bold xs
                     </p>
-                    <p className="body-text sans s bold">
-                        body-text sans s bold
+                    <p className="body-text sans bold s">
+                        body-text sans bold s
                     </p>
-                    <p className="body-text sans m bold">
-                        body-text sans m bold
+                    <p className="body-text sans bold m">
+                        body-text sans bold m
                     </p>
-                    <p className="body-text sans l bold">Reserved</p>
-                    <p className="body-text sans xl bold">Reserved</p>
-                    <p className="body-text sans xxl bold">Reserved</p>
+                    <p className="body-text sans bold l">Reserved</p>
+                    <p className="body-text sans bold xl">Reserved</p>
+                    <p className="body-text sans bold xxl">Reserved</p>
+                </>
+            </Explain>
+
+            <Explain
+                cssClassNames={['body-text']}
+                legend="Body text sans-serif slim"
+                hideReact={true}
+                description={
+                    <>
+                        <p>Example of body text sans-serif slim.</p>
+                    </>
+                }
+            >
+                <>
+                    <p className="body-text sans slim xs">
+                        body-text sans slim xs
+                    </p>
+                    <p className="body-text sans slim s">
+                        body-text sans slim s
+                    </p>
+                    <p className="body-text sans slim m">
+                        body-text sans slim m
+                    </p>
+                    <p className="body-text sans slim l">Reserved</p>
+                    <p className="body-text sans slim xl">Reserved</p>
+                    <p className="body-text sans slim xxl">Reserved</p>
                 </>
             </Explain>
         </>
