@@ -104,6 +104,9 @@ module.exports = {
         '/components/input/TextArea': ['./src/components/input/TextArea.tsx'],
         '/components/input/TextInput': ['./src/components/input/TextInput.tsx'],
 
+        // Menu
+        '/components/menu/Menu': ['./src/components/menu/Menu.tsx'],
+
         // Icons
         // '/design-tokens/icons': ['./src/design-tokens/icons.ts'],
 
