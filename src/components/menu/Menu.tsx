@@ -236,11 +236,15 @@ function Menu(props: Props) {
                 }
             }
 
-            setSortedMenuItems([
-                ...newMenuItems,
-                { ...moreMenuItem, menuItems: moreMenuItems },
-                ...overlappedItems,
-            ]);
+            if (moreMenuItems.length) {
+                setSortedMenuItems([
+                    ...newMenuItems,
+                    { ...moreMenuItem, menuItems: moreMenuItems },
+                    ...overlappedItems,
+                ]);
+            } else {
+                setSortedMenuItems([...newMenuItems]);
+            }
         }
     }, [menuRef, customMenuRef, menuItems, moreMenuItem]);
 

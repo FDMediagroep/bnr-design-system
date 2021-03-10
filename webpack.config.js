@@ -108,7 +108,7 @@ module.exports = {
         '/components/menu/Menu': ['./src/components/menu/Menu.tsx'],
 
         // Icons
-        // '/design-tokens/icons': ['./src/design-tokens/icons.ts'],
+        '/design-tokens/icons': ['./src/design-tokens/icons.ts'],
 
         // Global
         main: ['./src/main.ts'],
