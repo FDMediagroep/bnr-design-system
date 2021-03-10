@@ -105,7 +105,7 @@ module.exports = {
         '/components/input/TextInput': ['./src/components/input/TextInput.tsx'],
 
         // Icons
-        '/design-tokens/icons': ['./src/design-tokens/icons.ts'],
+        // '/design-tokens/icons': ['./src/design-tokens/icons.ts'],
 
         // Global
         main: ['./src/main.ts'],
