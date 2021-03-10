@@ -221,6 +221,35 @@ function Foo() {
 </details>
 
 <details>
+<summary>Play Button</summary>
+
+[Demo](https://bnr-design-system.vercel.app/button/play)
+
+Component CSS:
+
+```
+import "@fdmg/bnr-design-system/components/design-tokens/design-tokens.css";
+import "@fdmg/bnr-design-system/components/button/ButtonPlay.css";
+```
+
+```
+import { ButtonPlay } from "@fdmg/bnr-design-system/components/button/ButtonPlay";
+
+function Foo() {
+    const [playing, setPlaying] = useState(false);
+    function togglePlay() {
+        setPlaying((playState) => !playState);
+    }
+
+    return (
+        <ButtonPlay onClick={togglePlay} playing={playing}/>
+    );
+}
+```
+
+</details>
+
+<details>
 <summary>Checkbox</summary>
 
 [Demo](https://bnr-design-system.vercel.app/input/checkbox)
