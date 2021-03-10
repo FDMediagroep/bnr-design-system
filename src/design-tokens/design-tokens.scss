@@ -1,6 +1,7 @@
 @import './mixins/dark-tokens.scss';
 @import './mixins/light-tokens.scss';
 @import './typography/typography.scss';
+@import './media.scss';
 
 /**
  * This is the place to put some design tokens.
@@ -27,4 +28,18 @@
     @media (prefers-color-scheme: light) {
         @include light-tokens;
     }
+}
+
+:root {
+    --xs: #{map-deep-get($media, 'sizes', 'xs')};
+    --s: #{map-deep-get($media, 'sizes', 'xs')};
+    --m: #{map-deep-get($media, 'sizes', 'xs')};
+    --l: #{map-deep-get($media, 'sizes', 'xs')};
+    --xl: #{map-deep-get($media, 'sizes', 'xs')};
+    --xs-min-width: #{map-deep-get($media, 'sizes', 'xs-min-width')};
+    --s-min-width: #{map-deep-get($media, 'sizes', 's-min-width')};
+    --m-min-width: #{map-deep-get($media, 'sizes', 'm-min-width')};
+    --l-min-width: #{map-deep-get($media, 'sizes', 'l-min-width')};
+    --xl-min-width: #{map-deep-get($media, 'sizes', 'xl-min-width')};
+    --xxl-min-width: #{map-deep-get($media, 'sizes', 'xxl-min-width')};
 }
