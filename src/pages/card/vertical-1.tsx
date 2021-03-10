@@ -80,7 +80,7 @@ function Page() {
                     <VerticalCard1
                         {...verticalCards1[0]}
                         onButtonClick={togglePlay}
-                        playing={playing}
+                        isPlaying={playing}
                     />
                 </>
             </Explain>
@@ -104,7 +104,7 @@ function Page() {
                         {...verticalCards1[0]}
                         Link={Link}
                         onButtonClick={togglePlay}
-                        playing={playing}
+                        isPlaying={playing}
                     />
                 </>
             </Explain>

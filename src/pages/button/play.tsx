@@ -50,13 +50,13 @@ function Page() {
                     <ButtonPlay
                         id="demoPlayButton"
                         onClick={togglePlay}
-                        playing={playing}
+                        isPlaying={playing}
                     />
                     <ButtonPlay
                         id="demoPlayButton2"
                         style={{ fontSize: '1.5rem' }}
                         onClick={togglePlay}
-                        playing={playing}
+                        isPlaying={playing}
                     />
                 </>
             </Explain>

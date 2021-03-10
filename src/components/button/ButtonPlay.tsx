@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ButtonPlay.module.scss';
 
 interface Props {
-    playing?: boolean;
+    isPlaying?: boolean;
     [x: string]: any;
 }
 
@@ -12,7 +12,7 @@ function ButtonPlay(props: Props) {
             {...props}
             className={`${styles.buttonPlay}${
                 props.className ? ` ${props.className}` : ''
-            }${props.playing ? ` ${styles.showPause}` : ''}`}
+            }${props.isPlaying ? ` ${styles.showPause}` : ''}`}
         >
             <div className={styles.icon} />
         </div>

@@ -29,7 +29,7 @@ interface PictureProps extends CardProps {
 }
 
 interface MetaProps extends CardProps {
-    playing?: boolean;
+    isPlaying?: boolean;
     onButtonClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
@@ -139,7 +139,7 @@ function VerticalCard1(props: Props) {
                     {props.onButtonClick ? (
                         <ButtonPlay
                             onClick={props.onButtonClick}
-                            playing={props.playing}
+                            isPlaying={props.isPlaying}
                         />
                     ) : null}
                 </section>
