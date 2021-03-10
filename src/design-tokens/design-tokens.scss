@@ -32,10 +32,10 @@
 
 :root {
     --xs: #{map-deep-get($media, 'sizes', 'xs')};
-    --s: #{map-deep-get($media, 'sizes', 'xs')};
-    --m: #{map-deep-get($media, 'sizes', 'xs')};
-    --l: #{map-deep-get($media, 'sizes', 'xs')};
-    --xl: #{map-deep-get($media, 'sizes', 'xs')};
+    --s: #{map-deep-get($media, 'sizes', 's')};
+    --m: #{map-deep-get($media, 'sizes', 'm')};
+    --l: #{map-deep-get($media, 'sizes', 'l')};
+    --xl: #{map-deep-get($media, 'sizes', 'xl')};
     --xs-min-width: #{map-deep-get($media, 'sizes', 'xs-min-width')};
     --s-min-width: #{map-deep-get($media, 'sizes', 's-min-width')};
     --m-min-width: #{map-deep-get($media, 'sizes', 'm-min-width')};
