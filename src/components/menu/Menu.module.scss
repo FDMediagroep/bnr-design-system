@@ -210,11 +210,11 @@
     ::-webkit-scrollbar-thumb {
         -webkit-border-radius: 0.25rem;
         border-radius: 0.25rem;
-        background: var(--meta-copy);
+        background: var(--credits);
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background: var(--functional-copy);
+        background: var(--captions);
     }
 
     ::-webkit-scrollbar-thumb:window-inactive {
