@@ -152,6 +152,13 @@ function App({ Component, pageProps }) {
                             },
                             {
                                 component: (
+                                    <Link href="/button/play">
+                                        <a>Play Button</a>
+                                    </Link>
+                                ),
+                            },
+                            {
+                                component: (
                                     <Link href="/input/checkbox">
                                         <a>Checkbox</a>
                                     </Link>

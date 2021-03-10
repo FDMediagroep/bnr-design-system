@@ -1,6 +1,7 @@
 import { LinkProps } from 'next/link';
 import React from 'react';
 import { wrapWithAnchor } from '../../utils/cardHelpers';
+import { ButtonPlay } from '../button/ButtonPlay';
 import styles from './VerticalCard1.module.scss';
 
 interface CardProps {
@@ -28,7 +29,8 @@ interface PictureProps extends CardProps {
 }
 
 interface MetaProps extends CardProps {
-    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+    playing?: boolean;
+    onButtonClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 interface Props extends CardProps, PictureProps, MetaProps {
@@ -125,7 +127,7 @@ function VerticalCard1(props: Props) {
                 </figcaption>
             </figure>
 
-            {props.date || props.duration || props.onClick ? (
+            {props.date || props.duration || props.onButtonClick ? (
                 <section className={styles.meta}>
                     {wrapWithAnchor(
                         props.href,
@@ -134,8 +136,11 @@ function VerticalCard1(props: Props) {
                         </a>,
                         props.Link
                     )}
-                    {props.onClick ? (
-                        <button onClick={props.onClick}>Play</button>
+                    {props.onButtonClick ? (
+                        <ButtonPlay
+                            onClick={props.onButtonClick}
+                            playing={props.playing}
+                        />
                     ) : null}
                 </section>
             ) : null}

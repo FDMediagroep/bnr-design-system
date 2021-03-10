@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Explain } from '../../components/Explain';
 import {
     VerticalCard1,
@@ -40,6 +40,12 @@ export const metaTitle = 'Vertical Card 1';
 export const metaDescription = 'Vertical Card 1';
 
 function Page() {
+    const [playing, setPlaying] = useState(false);
+
+    function togglePlay() {
+        setPlaying((playState) => !playState);
+    }
+
     return (
         <>
             <Head>
@@ -71,7 +77,11 @@ function Page() {
                 }
             >
                 <>
-                    <VerticalCard1 {...verticalCards1[0]} />
+                    <VerticalCard1
+                        {...verticalCards1[0]}
+                        onButtonClick={togglePlay}
+                        playing={playing}
+                    />
                 </>
             </Explain>
 
@@ -90,7 +100,12 @@ function Page() {
                 }
             >
                 <>
-                    <VerticalCard1 {...verticalCards1[0]} Link={Link} />
+                    <VerticalCard1
+                        {...verticalCards1[0]}
+                        Link={Link}
+                        onButtonClick={togglePlay}
+                        playing={playing}
+                    />
                 </>
             </Explain>
         </>

@@ -1,0 +1,27 @@
+.buttonPlay {
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.125em solid var(--accent-1);
+    border-radius: 50%;
+    cursor: pointer;
+    .icon {
+        transition: 0.125s all linear;
+        border: 0;
+        background: transparent;
+        box-sizing: border-box;
+        border-color: transparent transparent transparent var(--credits);
+        border-style: solid;
+        border-width: 0.5em 0 0.5em 0.75em;
+        margin-left: 0.2em;
+    }
+    &.showPause .icon {
+        height: 0.75em;
+        border-style: double;
+        border-width: 0px 0 0px 0.5em;
+        margin-left: 0;
+    }
+}

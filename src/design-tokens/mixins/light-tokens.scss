@@ -29,6 +29,7 @@
      */
     --accent-1: #{map-deep-get($colors, 'colors', 'accent', 1)};
     --accent-2: #{map-deep-get($colors, 'colors', 'accent', 2)};
+    --accent-3: #{map-deep-get($colors, 'colors', 'accent', 3)};
 
     /**
      * Card

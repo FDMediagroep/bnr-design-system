@@ -97,6 +97,9 @@ module.exports = {
         '/components/button/ButtonGhost': [
             './src/components/button/ButtonGhost.tsx',
         ],
+        '/components/button/ButtonPlay': [
+            './src/components/button/ButtonPlay.tsx',
+        ],
         '/components/input/Checkbox': ['./src/components/input/Checkbox.tsx'],
         '/components/input/Radio': ['./src/components/input/Radio.tsx'],
         '/components/input/Select': ['./src/components/input/Select.tsx'],
