@@ -242,7 +242,7 @@ function Foo() {
     }
 
     return (
-        <ButtonPlay onClick={togglePlay} playing={playing}/>
+        <ButtonPlay onClick={togglePlay} isPlaying={playing}/>
     );
 }
 ```
