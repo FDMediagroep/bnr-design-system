@@ -11,6 +11,7 @@ function ButtonPlay(props: Props) {
     return (
         <button
             onClick={props.onClick}
+            style={props.style}
             className={`${styles.buttonPlay}${
                 props.className ? ` ${props.className}` : ''
             }${props.isPlaying ? ` ${styles.showPause}` : ''}`}
