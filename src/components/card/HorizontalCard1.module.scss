@@ -1,0 +1,188 @@
+@import '../../utils/map-deep-get.scss';
+@import '../../design-tokens/colors.scss';
+@import '../../design-tokens/media.scss';
+@import '../../design-tokens/typography.scss';
+
+.horizontalCard1 {
+    transition: box-shadow 0.15s linear;
+    margin-bottom: 1px;
+    justify-content: space-between;
+    padding: 0;
+    background-color: var(--card);
+    box-shadow: 1px 1px 9px 0 rgb(0 0 0 / 10%);
+    position: relative;
+
+    h1 {
+        color: var(--content-copy);
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        &:focus,
+        &:hover {
+            h1 {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .textContainer {
+        margin-bottom: 0;
+    }
+
+    .playButton {
+        position: absolute;
+        font-size: 2rem;
+        top: calc(50% - 0.75em);
+        left: calc(50% - 0.75em);
+    }
+
+    .figure.empty img {
+        max-width: 100%;
+    }
+    figure,
+    .figure.empty {
+        position: relative;
+        display: flex;
+        margin: 0;
+        flex: 0 0 100px;
+
+        picture {
+            position: relative;
+            width: 100px;
+            overflow: hidden;
+            > img {
+                display: block;
+                position: absolute;
+                height: 100%;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: auto;
+            }
+        }
+
+        figcaption {
+            display: none;
+        }
+    }
+
+    .figure.empty img {
+        width: 64px;
+        margin: auto;
+    }
+
+    .figure,
+    figure {
+        background-size: cover;
+        background-position: center;
+        background-color: var(--card);
+        flex: 0 0 100px;
+        min-height: 100px;
+    }
+
+    .teaserText {
+        position: relative;
+        flex: 1;
+        p {
+            margin-bottom: 0;
+        }
+        padding: 12px;
+        @media screen and (min-width: map-deep-get($media, 'sizes', 's')) {
+            padding: 16px;
+        }
+
+        > a {
+            color: var(--content-copy);
+            display: block;
+            overflow: visible;
+        }
+    }
+
+    .meta {
+        position: inherit;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 0 0 8px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .update {
+            padding: 1px 8px;
+            color: var(--card);
+            background-color: var(--primary);
+            line-height: 2em;
+            text-transform: uppercase;
+        }
+
+        .prefix {
+            text-transform: uppercase;
+            color: var(--primary);
+        }
+
+        time {
+            color: var(--meta-copy);
+            white-space: nowrap;
+        }
+    }
+
+    &.longread .teaserText .prefix {
+        color: var(--link-longread);
+    }
+
+    footer menu {
+        float: none;
+    }
+
+    .favorite .ico {
+        margin: inherit;
+        top: inherit;
+    }
+
+    footer menu > * {
+        min-height: inherit;
+        line-height: 22px;
+    }
+
+    footer {
+        min-height: inherit;
+    }
+
+    &.isRead:not(:hover):not(:active) {
+        figure {
+            filter: grayscale(1) sepia(0.15);
+        }
+        .meta .prefix,
+        .meta time,
+        .textContainer h1 {
+            color: var(--card-text-visited);
+        }
+
+        .meta .update {
+            color: var(--card-label-text-visited);
+            background-color: var(--card-label-visited);
+        }
+
+        background-color: var(--card-visited);
+        // IE11
+        @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+            background-color: #{map-deep-get($colors, 'colors', 'neutral', 90)};
+        }
+    }
+
+    &:focus:not(:active),
+    &:hover:not(:active) {
+        box-shadow: var(--card-box-shadow);
+        background-color: var(--card-hover);
+        z-index: 1;
+    }
+    &:active {
+        z-index: 1;
+        outline: 2px solid var(--card-outline-active);
+        background-color: var(--card-active);
+    }
+}

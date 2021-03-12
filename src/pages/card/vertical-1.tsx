@@ -6,6 +6,7 @@ import {
 } from '../../components/card/VerticalCard1';
 import Head from 'next/head';
 import Link from 'next/link';
+import styles from './cards.module.scss';
 
 const verticalCards1: any = [
     {
@@ -63,6 +64,7 @@ function Page() {
             </Head>
 
             <Explain
+                previewClassName={styles.horizontalFlexPreview}
                 anchor="vertical1"
                 cssClassNames={getCssClassNames()}
                 legend="Vertical Card 1"
@@ -86,6 +88,7 @@ function Page() {
             </Explain>
 
             <Explain
+                previewClassName={styles.horizontalFlexPreview}
                 anchor="vertical1-next-link"
                 cssClassNames={getCssClassNames()}
                 legend="Vertical Card 1 next/link"

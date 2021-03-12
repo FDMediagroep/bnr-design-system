@@ -76,6 +76,9 @@ module.exports = {
     },
     entry: {
         // Cards
+        '/components/card/HorizontalCard1': [
+            './src/components/card/HorizontalCard1.tsx',
+        ],
         '/components/card/VerticalCard1': [
             './src/components/card/VerticalCard1.tsx',
         ],

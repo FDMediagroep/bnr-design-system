@@ -2,6 +2,7 @@ export * as DesignTokens from './design-tokens/design-tokens';
 export * from './design-tokens/icons';
 
 // Cards
+export { HorizontalCard1 } from './components/card/HorizontalCard1';
 export { VerticalCard1 } from './components/card/VerticalCard1';
 
 // Controls

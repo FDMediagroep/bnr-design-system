@@ -29,7 +29,13 @@ interface PictureProps extends CardProps {
 }
 
 interface MetaProps extends CardProps {
+    /**
+     * Show play or pause icon.
+     */
     isPlaying?: boolean;
+    /**
+     * Handle play/pause click.
+     */
     onButtonClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 

@@ -2,20 +2,21 @@ import React from 'react';
 import styles from './ButtonPlay.module.scss';
 
 interface Props {
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
     isPlaying?: boolean;
     [x: string]: any;
 }
 
 function ButtonPlay(props: Props) {
     return (
-        <div
-            {...props}
+        <button
+            onClick={props.onClick}
             className={`${styles.buttonPlay}${
                 props.className ? ` ${props.className}` : ''
             }${props.isPlaying ? ` ${styles.showPause}` : ''}`}
         >
             <div className={styles.icon} />
-        </div>
+        </button>
     );
 }
 

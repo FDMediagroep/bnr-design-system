@@ -499,6 +499,30 @@ function Foo() {
 ### Cards
 
 <details>
+<summary>Horizontal card 1</summary>
+
+[Demo](https://bnr-design-system.vercel.app/card/horizontal-1)
+
+Component CSS:
+
+```
+import "@fdmg/bnr-design-system/components/design-tokens/design-tokens.css";
+import "@fdmg/bnr-design-system/components/card/HorizontalCard1.css";
+```
+
+```
+import { HorizontalCard1 } from "@fdmg/bnr-design-system/components/card/HorizontalCard1";
+
+function Foo() {
+    return (
+        <HorizontalCard1 {...cardProps} />
+    );
+}
+```
+
+</details>
+
+<details>
 <summary>Vertical card 1</summary>
 
 [Demo](https://bnr-design-system.vercel.app/card/vertical-1)
@@ -547,37 +571,26 @@ import "@fdmg/bnr-design-system/components/design-tokens/design-tokens.css";
 ```
 function Foo() {
     return (
-        <h1 className="heading serif xs">Heading xs</h1>
-        <h1 className="heading serif s">Heading s</h1>
-        <h1 className="heading serif m">Heading m</h1>
-        <h1 className="heading serif l">Heading l</h1>
-        <h1 className="heading serif xl">Heading xl</h1>
-        <h1 className="heading serif xxl">Heading xxl</h1>
+        <h1 className="heading sans xs">Heading sans xs</h1>
+        <h1 className="heading sans s">Heading sans s</h1>
+        <h1 className="heading sans m">Heading sans m</h1>
+        <h1 className="heading sans l">Heading sans l</h1>
+        <h1 className="heading sans xl">Heading sans xl</h1>
+        <h1 className="heading sans xxl">Heading sans xxl</h1>
 
-        <h1 className="heading sans xs">Heading xs</h1>
-        <h1 className="heading sans s">Heading s</h1>
-        <h1 className="heading sans m">Heading m</h1>
-        <h1 className="heading sans l">Heading l</h1>
-        <h1 className="heading sans xl">Heading xl</h1>
-        <h1 className="heading sans xxl">Heading xxl</h1>
+        <h1 className="heading sans bold xs">Heading sans bold xs</h1>
+        <h1 className="heading sans bold s">Heading sans bold s</h1>
+        <h1 className="heading sans bold m">Heading sans bold m</h1>
+        <h1 className="heading sans bold l">Heading sans bold l</h1>
+        <h1 className="heading sans bold xl">Heading sans bold xl</h1>
+        <h1 className="heading sans bold xxl">Heading sans bold xxl</h1>
 
-        <p className="body-text serif xs">body-text serif xs</p>
-        <p className="body-text serif s">body-text serif s</p>
-        <p className="body-text serif m">Reserved</p>
-        <p className="body-text serif l">Reserved</p>
-        <p className="body-text serif xl">Reserved</p>
-        <p className="body-text serif xxl">Reserved</p>
-
-        <p className="body-text serif xs bold">
-            body-text serif xs bold
-        </p>
-        <p className="body-text serif s bold">
-            body-text serif s bold
-        </p>
-        <p className="body-text serif m bold">Reserved</p>
-        <p className="body-text serif l bold">Reserved</p>
-        <p className="body-text serif xl bold">Reserved</p>
-        <p className="body-text serif xxl bold">Reserved</p>
+        <h1 className="heading sans slim xs">Heading sans slim xs</h1>
+        <h1 className="heading sans slim s">Heading sans slim s</h1>
+        <h1 className="heading sans slim m">Heading sans slim m</h1>
+        <h1 className="heading sans slim l">Heading sans slim l</h1>
+        <h1 className="heading sans slim xl">Heading sans slim xl</h1>
+        <h1 className="heading sans slim xxl">Heading sans slim xxl</h1>
 
         <p className="body-text sans xs">body-text sans xs</p>
         <p className="body-text sans s">body-text sans s</p>
@@ -586,19 +599,19 @@ function Foo() {
         <p className="body-text sans xl">Reserved</p>
         <p className="body-text sans xxl">Reserved</p>
 
-        <p className="body-text sans xs bold">
-            body-text sans xs bold
-        </p>
-        <p className="body-text sans s bold">
-            body-text sans s bold
-        </p>
-        <p className="body-text sans m bold">
-            body-text sans m bold
-        </p>
-        <p className="body-text sans l bold">Reserved</p>
-        <p className="body-text sans xl bold">Reserved</p>
-        <p className="body-text sans xxl bold">Reserved</p>
+        <p className="body-text sans bold xs">body-text sans bold xs</p>
+        <p className="body-text sans bold s">body-text sans bold s</p>
+        <p className="body-text sans bold m">body-text sans bold m</p>
+        <p className="body-text sans bold l">Reserved</p>
+        <p className="body-text sans bold xl">Reserved</p>
+        <p className="body-text sans bold xxl">Reserved</p>
 
+        <p className="body-text sans slim xs">body-text sans slim xs</p>
+        <p className="body-text sans slim s">body-text sans slim s</p>
+        <p className="body-text sans slim m">body-text sans slim m</p>
+        <p className="body-text sans slim l">Reserved</p>
+        <p className="body-text sans slim xl">Reserved</p>
+        <p className="body-text sans slim xxl">Reserved</p>
     );
 }
 ```

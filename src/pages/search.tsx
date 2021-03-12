@@ -28,6 +28,10 @@ import {
 } from './button/ghost';
 
 import {
+    metaTitle as horizontalCard1Title,
+    metaDescription as horizontalCard1Description,
+} from './card/horizontal-1';
+import {
     metaTitle as verticalCard1Title,
     metaDescription as verticalCard1Description,
 } from './card/vertical-1';
@@ -100,6 +104,10 @@ const searchIndex: SearchIndex = {
     '/button/ghost': {
         title: buttonGhostTitle,
         description: buttonGhostDescription,
+    },
+    '/card/horizontal-1': {
+        title: horizontalCard1Title,
+        description: horizontalCard1Description,
     },
     '/card/vertical-1': {
         title: verticalCard1Title,

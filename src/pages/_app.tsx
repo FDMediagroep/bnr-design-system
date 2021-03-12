@@ -111,6 +111,13 @@ function App({ Component, pageProps }) {
                         menuItems: [
                             {
                                 component: (
+                                    <Link href="/card/horizontal-1">
+                                        <a>HorizontalCard1</a>
+                                    </Link>
+                                ),
+                            },
+                            {
+                                component: (
                                     <Link href="/card/vertical-1">
                                         <a>VerticalCard1</a>
                                     </Link>
@@ -332,13 +339,6 @@ function App({ Component, pageProps }) {
                             />
                         </div>
                     </form>
-                    <ButtonCta
-                        className={styles.customButton}
-                        aria-label="Dummy button"
-                        title="Dummy button"
-                    >
-                        Abonneren
-                    </ButtonCta>
                 </>
             </Menu>
 
