@@ -32,7 +32,7 @@ interface Props {
      */
     onButtonClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 
-    time: string;
+    time?: string;
     title: string;
     isRead?: boolean;
     updated?: boolean;
@@ -102,9 +102,11 @@ function HorizontalCard1(props: Props) {
                                 </span>
                             ) : null}
 
-                            <time className="body-text sans bold xs">
-                                {props.time}
-                            </time>
+                            {props.time ? (
+                                <time className="body-text sans bold xs">
+                                    {props.time}
+                                </time>
+                            ) : null}
                         </div>
 
                         <div className={styles.textContainer}>
