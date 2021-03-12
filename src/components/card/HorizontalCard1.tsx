@@ -87,28 +87,30 @@ function HorizontalCard1(props: Props) {
                     )}
 
                     <div className={styles.teaserText}>
-                        <div className={styles.meta}>
-                            {props.updated && (
-                                <span
-                                    className={`${styles.update} body-text sans bold xs`}
-                                >
-                                    Update
-                                </span>
-                            )}
-                            {!props.updated && props.label ? (
-                                <span
-                                    className={`${styles.prefix} body-text sans bold xs`}
-                                >
-                                    {props.label}
-                                </span>
-                            ) : null}
+                        {props.updated || props.label || props.time ? (
+                            <div className={styles.meta}>
+                                {props.updated && (
+                                    <span
+                                        className={`${styles.update} body-text sans bold xs`}
+                                    >
+                                        Update
+                                    </span>
+                                )}
+                                {!props.updated && props.label ? (
+                                    <span
+                                        className={`${styles.prefix} body-text sans bold xs`}
+                                    >
+                                        {props.label}
+                                    </span>
+                                ) : null}
 
-                            {props.time ? (
-                                <time className="body-text sans bold xs">
-                                    {props.time}
-                                </time>
-                            ) : null}
-                        </div>
+                                {props.time ? (
+                                    <time className="body-text sans bold xs">
+                                        {props.time}
+                                    </time>
+                                ) : null}
+                            </div>
+                        ) : null}
 
                         <div className={styles.textContainer}>
                             <h1 className="heading sans s">{props.title}</h1>

@@ -20,7 +20,6 @@ const horizontalCards1: any = [
         title: 'Omzet Alfen stijgt in eerste coronakwartaal met 58%',
         intro:
             'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
-        readingTime: 3,
     },
     {
         id: '1343728',
@@ -34,7 +33,6 @@ const horizontalCards1: any = [
         updated: true,
         intro:
             'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
-        readingTime: 5,
     },
     {
         id: '1343728',
@@ -48,7 +46,6 @@ const horizontalCards1: any = [
         isRead: true,
         intro:
             'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
-        readingTime: 7,
     },
     {
         id: '1343728',
@@ -61,7 +58,6 @@ const horizontalCards1: any = [
         title: "'Leraren hebben straks geen klassen van 32 leerlingen meer'",
         updated: true,
         isRead: true,
-        readingTime: 7,
         intro:
             'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
     },
@@ -93,11 +89,9 @@ const horizontalCards1: any = [
             'https://fd.nl/ondernemen/1343811/omzet-alfen-in-eerste-coronakwartaal-58',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
-        label: 'Energie',
         title: 'Omzet Alfen stijgt in eerste coronakwartaal met 58%',
         intro:
             'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
-        readingTime: 3,
     },
 ];
 
@@ -143,6 +137,7 @@ function Page() {
                             <li>updated visited</li>
                             <li>variant-1</li>
                             <li>no image</li>
+                            <li>no meta data</li>
                         </ul>
                     </>
                 }
@@ -220,6 +215,12 @@ function Page() {
                     />
                     <HorizontalCard1
                         {...horizontalCards1[5]}
+                        Link={Link}
+                        onButtonClick={togglePlay}
+                        isPlaying={playing}
+                    />
+                    <HorizontalCard1
+                        {...horizontalCards1[6]}
                         Link={Link}
                         onButtonClick={togglePlay}
                         isPlaying={playing}
