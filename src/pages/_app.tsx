@@ -3,7 +3,6 @@ import '../design-tokens/design-tokens.scss';
 import './_app.scss';
 import './_app_markdown.scss';
 import './_app_a11y-dark.scss';
-import '@fdmg/design-system/components/card/HorizontalCard3.css';
 import styles from './_app.module.scss';
 import PageStore, { Page } from '../stores/PageStore';
 import Head from 'next/head';

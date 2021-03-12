@@ -4,7 +4,6 @@
  * search engine.
  */
 import { GridContainer } from '@fdmg/css-grid/GridContainer';
-import { HorizontalCard3 } from '@fdmg/design-system/components/card/HorizontalCard3';
 
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -80,6 +79,7 @@ import { TextInput } from '../components/input/TextInput';
 import { handleSearchSubmit, interceptLinks } from '../utils/search';
 
 import styles from './search.module.scss';
+import { HorizontalCard1 } from '../components/card/HorizontalCard1';
 
 type SearchIndex = {
     [x: string]: {
@@ -262,14 +262,13 @@ export default function page() {
                             const title = result[1].title;
                             const description = result[1].description;
                             return (
-                                <HorizontalCard3
+                                <HorizontalCard1
                                     key={idx}
                                     id={path}
                                     title={title}
                                     intro={description}
                                     label="Component"
-                                    time=""
-                                    url={path}
+                                    href={path}
                                 />
                             );
                         })}

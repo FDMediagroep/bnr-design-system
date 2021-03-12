@@ -47,18 +47,18 @@ Canary releases are pre-releases. So version `v1.2.3-canary.1` is considered as 
 
 With NPM a developer typically installs node modules like so:
 
-`npm i @fdmg/design-system`
+`npm i @fdmg/bnr-design-system`
 
 or
 
-`npm i @fdmg/design-system@latest`
+`npm i @fdmg/bnr-design-system@latest`
 
 Let's say we haven't released `v1.2.3` yet then both these commands would automatically install `v1.2.2` and not `v1.2.3-canary.1`. Even though the latter has been packaged and released later than `v1.2.2`.
 
 In order to install `v1.2.3-canary.1` the developer could use the following commands:
 
-`npm i @fdmg/design-system@v1.2.3-canary.1`
+`npm i @fdmg/bnr-design-system@v1.2.3-canary.1`
 
 or
 
-`npm i @fdmg/design-system@next`
+`npm i @fdmg/bnr-design-system@next`
