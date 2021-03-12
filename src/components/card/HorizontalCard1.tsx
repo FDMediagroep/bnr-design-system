@@ -16,7 +16,7 @@ interface Props {
      * Show play or pause icon.
      */
     isPlaying?: boolean;
-    label: string;
+    label?: string;
     /**
      * Link element e.g.: next/link
      * If nothing is passed then a regular HTMLAnchorElement is used.
@@ -94,13 +94,13 @@ function HorizontalCard1(props: Props) {
                                     Update
                                 </span>
                             )}
-                            {!props.updated && (
+                            {!props.updated && props.label ? (
                                 <span
                                     className={`${styles.prefix} body-text sans bold xs`}
                                 >
                                     {props.label}
                                 </span>
-                            )}
+                            ) : null}
 
                             <time className="body-text sans bold xs">
                                 {props.time}
