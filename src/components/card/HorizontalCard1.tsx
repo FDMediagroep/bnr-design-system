@@ -12,6 +12,7 @@ interface Props {
      * Custom image component. When set this will replace the default img-element.
      */
     imageComponent?: JSX.Element;
+    intro?: string;
     /**
      * Show play or pause icon.
      */
@@ -111,6 +112,11 @@ function HorizontalCard1(props: Props) {
 
                         <div className={styles.textContainer}>
                             <h1 className="heading sans s">{props.title}</h1>
+                            {props.intro ? (
+                                <p className="body-text sans s">
+                                    {props.intro}
+                                </p>
+                            ) : null}
                         </div>
                     </div>
                 </a>,
