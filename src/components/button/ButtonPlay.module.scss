@@ -8,6 +8,11 @@
     justify-content: center;
     border: 0.125em solid var(--accent-1);
     border-radius: 50%;
+    transition: all 0.125s linear;
+    background-color: rgba(255, 255, 255, 0.6);
+    &:hover {
+        background-color: var(--card);
+    }
     cursor: pointer;
     .icon {
         transition: 0.125s all linear;
