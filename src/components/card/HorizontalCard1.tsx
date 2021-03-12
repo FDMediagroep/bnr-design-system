@@ -6,7 +6,7 @@ import styles from './HorizontalCard1.module.scss';
 
 interface Props {
     id: string;
-    url: string;
+    href: string;
     imageUrl?: string;
     /**
      * Custom image component. When set this will replace the default img-element.
@@ -54,7 +54,7 @@ function HorizontalCard1(props: Props) {
             id={props.id}
         >
             {wrapWithAnchor(
-                props.url,
+                props.href,
                 <a aria-label={props.title}>
                     {(props.imageUrl || props.imageComponent) && (
                         <figure>

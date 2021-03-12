@@ -5,6 +5,7 @@ import { ButtonPlay } from '../button/ButtonPlay';
 import styles from './VerticalCard1.module.scss';
 
 interface CardProps {
+    id: string;
     href: string;
     /**
      * Link element e.g.: next/link
@@ -21,7 +22,6 @@ interface CardProps {
 }
 
 interface PictureProps extends CardProps {
-    caption?: string;
     imageUrlS?: string;
     imageUrlM?: string;
     imageUrlL?: string;
@@ -78,7 +78,7 @@ function Picture(props: PictureProps) {
     );
 }
 
-function Meta(props: MetaProps) {
+function Meta(props: Props) {
     return (
         <section className="body-text sans xs">
             {props.date ? <time>{props.date}</time> : null}
