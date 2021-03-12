@@ -11,7 +11,7 @@ import Link from 'next/link';
 const horizontalCards1: any = [
     {
         id: '1343811',
-        url:
+        href:
             'https://fd.nl/ondernemen/1343811/omzet-alfen-in-eerste-coronakwartaal-58',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
@@ -22,7 +22,7 @@ const horizontalCards1: any = [
     },
     {
         id: '1343728',
-        url:
+        href:
             'https://fd.nl/ondernemen/1343728/staalfabrikant-aperam-verwacht-forse-daling-verkopen',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
@@ -34,7 +34,7 @@ const horizontalCards1: any = [
     },
     {
         id: '1343728',
-        url:
+        href:
             'https://fd.nl/economie-politiek/1343620/leraren-hebben-straks-geen-klassen-van-32-leerlingen-meer',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
@@ -46,7 +46,7 @@ const horizontalCards1: any = [
     },
     {
         id: '1343728',
-        url:
+        href:
             'https://fd.nl/economie-politiek/1343620/leraren-hebben-straks-geen-klassen-van-32-leerlingen-meer',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
@@ -59,7 +59,7 @@ const horizontalCards1: any = [
     },
     {
         id: '1334870',
-        url: 'http://local.fd.nl:8888/opinie/1334870/een-europese-rente',
+        href: 'http://local.fd.nl:8888/opinie/1334870/een-europese-rente',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
         label: 'Kleintje groot',
@@ -69,7 +69,7 @@ const horizontalCards1: any = [
     },
     {
         id: '1353344',
-        url:
+        href:
             'https://fd.nl/economie-politiek/1353344/huiseigenaren-minder-bezorgd-over-kanteling-op-woningmarkt',
         label: 'Woningmarkt',
         time: '6 aug',
@@ -77,7 +77,7 @@ const horizontalCards1: any = [
     },
     {
         id: '1343811',
-        url:
+        href:
             'https://fd.nl/ondernemen/1343811/omzet-alfen-in-eerste-coronakwartaal-58',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
