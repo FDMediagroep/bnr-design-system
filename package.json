@@ -1,6 +1,6 @@
 {
     "name": "@fdmg/bnr-design-system",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "BNR Design System",
     "publishConfig": {
         "access": "public"
