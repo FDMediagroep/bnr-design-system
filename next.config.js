@@ -9,7 +9,7 @@ if (process.env.SERVERLESS) {
 
 module.exports = {
     ...serverless,
-    // future: { webpack5: true },
+    future: { webpack5: true },
     images: {
         domains: [
             'dev.bnr.nl',
