@@ -86,7 +86,7 @@
         "rehype-raw": "^5.1.0",
         "rehype-sanitize": "^4.0.0",
         "sass": "^1.34.0",
-        "sass-loader": "^11.1.1",
+        "sass-loader": "^12.0.0",
         "style-loader": "^2.0.0",
         "svgo": "^2.3.0",
         "svgo-loader": "^3.0.0",
