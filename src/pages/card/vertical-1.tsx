@@ -12,8 +12,7 @@ const verticalCards1: any = [
     {
         id: '1345422',
         label: 'Arbeidsmarkt',
-        title:
-            'Lockdown leidt tot recordstijging aantal WW-uitkeringen in april',
+        title: 'Lockdown leidt tot recordstijging aantal WW-uitkeringen in april',
         imageUrl:
             'https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399',
         imageUrlS:
@@ -22,8 +21,7 @@ const verticalCards1: any = [
             'https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=351&h=234',
         imageUrlL:
             'https://images.fd.nl/Cz9PTU-el_agiaSDvJOfmwrvu6g.jpg?rect=.0%2c.0428571428571429%2c.9999999999999999%2c.95&fit=crop&crop=faces&auto=format&q=45&w=599&h=399',
-        href:
-            'https://fd.nl/economie-politiek/1345422/lockdown-leidt-tot-recordstijging-aantal-ww-uitkeringen-in-april',
+        href: 'https://fd.nl/economie-politiek/1345422/lockdown-leidt-tot-recordstijging-aantal-ww-uitkeringen-in-april',
         overlayImageUrl:
             'https://bnr-external-prod.imgix.net/40ae3951f39151b1f98ee0850cc1d9a89ae20c51.png',
         overlayLinkUrl:

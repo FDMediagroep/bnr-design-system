@@ -9,7 +9,6 @@ if (process.env.SERVERLESS) {
 
 module.exports = {
     ...serverless,
-    future: { webpack5: true },
     images: {
         domains: [
             'dev.bnr.nl',
@@ -21,6 +20,7 @@ module.exports = {
             'www.omnycontent.com',
             'cdn.sanity.io',
         ],
+        disableStaticImages: true,
     },
     async rewrites() {
         return [...rewriteConfig];

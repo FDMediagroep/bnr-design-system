@@ -125,7 +125,7 @@ function Tokens(props: Props) {
                         <span
                             key={idx}
                             className={`${styles.icon}`}
-                            dangerouslySetInnerHTML={{ __html: icon }}
+                            dangerouslySetInnerHTML={{ __html: icon as any }}
                         />
                     ))}
                 </div>

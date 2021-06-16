@@ -11,46 +11,39 @@ import Link from 'next/link';
 const horizontalCards1: any = [
     {
         id: '1343811',
-        href:
-            'https://fd.nl/ondernemen/1343811/omzet-alfen-in-eerste-coronakwartaal-58',
+        href: 'https://fd.nl/ondernemen/1343811/omzet-alfen-in-eerste-coronakwartaal-58',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
         label: 'Energie',
         time: '08:10',
         title: 'Omzet Alfen stijgt in eerste coronakwartaal met 58%',
-        intro:
-            'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
+        intro: 'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
     },
     {
         id: '1343728',
-        href:
-            'https://fd.nl/ondernemen/1343728/staalfabrikant-aperam-verwacht-forse-daling-verkopen',
+        href: 'https://fd.nl/ondernemen/1343728/staalfabrikant-aperam-verwacht-forse-daling-verkopen',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
         label: 'Industrie',
         time: '07:49',
         title: 'Staalfabrikant Aperam verwacht forse daling verkopen',
         updated: true,
-        intro:
-            'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
+        intro: 'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
     },
     {
         id: '1343728',
-        href:
-            'https://fd.nl/economie-politiek/1343620/leraren-hebben-straks-geen-klassen-van-32-leerlingen-meer',
+        href: 'https://fd.nl/economie-politiek/1343620/leraren-hebben-straks-geen-klassen-van-32-leerlingen-meer',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
         label: 'Coronakronieken',
         time: '07:18',
         title: "'Leraren hebben straks geen klassen van 32 leerlingen meer'",
         isRead: true,
-        intro:
-            'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
+        intro: 'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
     },
     {
         id: '1343728',
-        href:
-            'https://fd.nl/economie-politiek/1343620/leraren-hebben-straks-geen-klassen-van-32-leerlingen-meer',
+        href: 'https://fd.nl/economie-politiek/1343620/leraren-hebben-straks-geen-klassen-van-32-leerlingen-meer',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
         label: 'Coronakronieken',
@@ -58,8 +51,7 @@ const horizontalCards1: any = [
         title: "'Leraren hebben straks geen klassen van 32 leerlingen meer'",
         updated: true,
         isRead: true,
-        intro:
-            'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
+        intro: 'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
     },
     {
         id: '1334870',
@@ -70,28 +62,23 @@ const horizontalCards1: any = [
         time: '1 aug',
         title: 'Eén Europese rente',
         variant: 'variant-1',
-        intro:
-            'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
+        intro: 'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
     },
     {
         id: '1353344',
-        href:
-            'https://fd.nl/economie-politiek/1353344/huiseigenaren-minder-bezorgd-over-kanteling-op-woningmarkt',
+        href: 'https://fd.nl/economie-politiek/1353344/huiseigenaren-minder-bezorgd-over-kanteling-op-woningmarkt',
         label: 'Woningmarkt',
         time: '6 aug',
         title: 'Huiseigenaren minder bezorgd over kanteling op woningmarkt',
-        intro:
-            'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
+        intro: 'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
     },
     {
         id: '1343811',
-        href:
-            'https://fd.nl/ondernemen/1343811/omzet-alfen-in-eerste-coronakwartaal-58',
+        href: 'https://fd.nl/ondernemen/1343811/omzet-alfen-in-eerste-coronakwartaal-58',
         imageUrl:
             'https://bnr-external-prod.imgix.net/1U0052_voZpwotYhX7JKD2xlSy4.jpg?rect=.0,.0,.73375,.9999999999999999&fit=crop&crop=faces&auto=format&w=300&q=75',
         title: 'Omzet Alfen stijgt in eerste coronakwartaal met 58%',
-        intro:
-            'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
+        intro: 'Intro tekst komt hier te staan en kan een heel stuk langer zijn dan de titel. Maar dat zou geen probleem moeten zijn en de leesbaarheid van de cards niet ten nadele moeten beinvloeden.',
     },
 ];
 
