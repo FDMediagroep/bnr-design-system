@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-import ReactMD from 'react-markdown';
-import rehypeRaw from 'rehype-raw';
-import rehypeSanitize from 'rehype-sanitize';
+import MarkdownIt from 'markdown-it';
+const md = new MarkdownIt({
+    html: true,
+});
 import { useRouter } from 'next/router';
 
 export const metaTitle = 'BNR Design System';
@@ -65,12 +66,10 @@ function Page(props: Props) {
                     content={metaDescription}
                 />
             </Head>
-            <ReactMD
+            <div
                 className="markdown"
-                rehypePlugins={[rehypeRaw, rehypeSanitize]}
-            >
-                {props.readme}
-            </ReactMD>
+                dangerouslySetInnerHTML={{ __html: md.render(props.readme) }}
+            />
             <a
                 className="github"
                 href="https://github.com/FDMediagroep/fd-design-system"
