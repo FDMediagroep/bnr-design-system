@@ -82,7 +82,7 @@ function HorizontalCard1(props: Props) {
 
                     {!props.imageUrl && !props.imageComponent && (
                         <div className={`${styles.figure} ${styles.empty}`}>
-                            <img src="/assets/images/logo.svg" />
+                            <img src="/assets/images/logo.svg" alt="FD-Logo" />
                         </div>
                     )}
 
