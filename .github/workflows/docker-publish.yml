@@ -42,7 +42,8 @@ jobs:
     needs: test
 
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
+    if: ${{ false }} # Disabled job. We don't want to push our images to the Docker repository.
+    # if: github.event_name == 'push'
 
     steps:
       - uses: actions/checkout@v2
